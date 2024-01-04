@@ -18,4 +18,7 @@
   --subtitle-font-size: 28px;
   --button-font-size: 14px;
   --description-font-size: 12px;
+
+  --inp-border-color:rgb(227,227,227);
+  --inp-border-radius:5px;
 }
