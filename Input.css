@@ -1,0 +1,22 @@
+/*  input box, dropdown box */
+
+.inp-container{
+    height:48px;
+    width:300px;
+    display: flex;
+    align-items: center; 
+    border: 1px solid var(--inp-border-color);
+    border-radius:  var(--inp-border-radius);
+    padding:12px;
+    column-gap: 12px;
+    cursor: pointer;
+}
+.inp-container .logo{
+    width: 20px;
+}
+.inp-container .field{
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
