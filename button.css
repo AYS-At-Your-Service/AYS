@@ -1,0 +1,82 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--button-font-size);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.login-btn {
+    font-family: var(--font-family);
+    font-weight: var(--font-normal);
+    display: inline-block;
+    padding: 13px 30px;
+    font-size: var(--button-font-size);
+    border: 1px solid var(--outline-grey);
+    color: var(--text-grey);
+    background-color: var(--bg-white);
+}
+
+.login-btn:hover {
+    background-color: var(--login-btn-bg-grey);
+}
+
+
+
+.large-btn{
+    width: 504px;
+    height: 48px;
+    font-family: var(--font-family);
+    font-weight: var(--font-normal);
+    padding: 13px 30px;
+    font-size: var(--button-font-size);
+    border: 1px solid var(--outline-grey);
+    color: var(--text-grey);
+    background-color: var(--bg-white);
+}
+
+.large-btn:hover{
+    background-color: var(--purple);
+    color: var(--bg-white);
+}
+
+.medium-btn{
+    width: 80px;
+    height: 32px;
+    font-family: var(--font-family);
+    font-weight: var(--font-normal);
+    padding: 13px 20px;
+    font-size: var(--button-font-size);
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    background-color: var(--medium-btn-bg-purple);
+}
+
+.small-btn{
+    width: 52px;
+    height: 32px;
+    font-family: var(--font-family);
+    font-weight: var(--font-bold);
+    padding: 13px 20px;
+    font-size: var(--button-font-size);
+    border: 1px solid var(--outline-grey);
+    background-color: var(--bg-white);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--button-font-size);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
