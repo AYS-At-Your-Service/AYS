@@ -1,0 +1,19 @@
+.base{
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+} 
+
+.case{
+    color: darkblue;
+}
+
+.cross{
+    margin: 12px 16 px;
+    align-self: flex-end;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 1.00);
+    cursor: pointer;
+    justify-content: center;
+}
