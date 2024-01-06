@@ -1,24 +1,27 @@
 /*  input box, dropdown box */
 
-.rect-container{
+
+.container{
+    display: inline;
+    border: 1px solid var(--rect-border-color);
+    border-radius:  var(--rect-border-radius);
+    padding:var(--rect-gap);
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+}
+.logo-field-container{
 
     display: inline-flex;
     align-items: center; 
 
-    border: 1px solid var(--rect-border-color);
-    border-radius:  var(--rect-border-radius);
-    padding:var(--rect-gap);
-    column-gap: var(--ret-gap);
+    column-gap: var(--rect-gap);
     cursor: pointer;
-
-    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+    
 }
-.rect-container .logo{
+.logo-field-container .logo{
     width:var(--logo-small);
 }
-.rect-container .field{
+.logo-field-container .field{
     border: none;
     outline: none;
     flex-grow: 1;
 }
-
