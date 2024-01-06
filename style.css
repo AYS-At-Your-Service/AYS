@@ -27,12 +27,3 @@
 
   --dropdown-box-shadow:0px 4px 12px rgba(15,15,15,0.08);
 }
-
-
-.w-200{
-  width: 200px;
-}
-
-.drop-box-shadow{
-  box-shadow: var(--dropdown-box-shadow);
-}
