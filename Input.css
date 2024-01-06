@@ -1,33 +1,6 @@
 /*  input box, dropdown box */
 
 
-
-.w-400{
-    width: 400px;
-  }
-.w-300{
-    width: 300px;
-}
-.h-20{
-height:20px;
-}
-.px-12{
-padding-left:12px;
-padding-right: 12px;
-}
-.px-8{
-padding-left:8px;
-padding-right: 8px;
-}
-.py-12{
-padding-top: 12px;
-padding-bottom: 12px;
-}
-.py-2{
-padding-top: 2px;
-padding-bottom: 2px;
-}
-
 .drop-box-shadow{
 box-shadow: var(--dropdown-box-shadow);
 }
@@ -73,5 +46,35 @@ box-shadow: var(--dropdown-box-shadow);
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
+    font-size: var(--description-font-size);
+}
+
+.dv2{
+    padding: var(--rect-gap);
+    display: flex;
+    flex-direction: column;
+    gap:var(--dropdown-v2-gap)
+}
+
+.dv2 .category{
+    display: flex;
+    gap:var(--rect-gap)
+    
+}
+
+.dv2 .category .image{
+    height:var(--dropdown-v2-image-height);
+    border-radius:  var(--rect-border-radius);
+}
+
+.dv2 .category .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dv2 .category .text .title{
+    font-size: var(--button-font-size);
+}
+.dv2 .category .text .subtitle{
     font-size: var(--description-font-size);
 }
