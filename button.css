@@ -6,16 +6,16 @@
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: var(--btn-border-radius);
 }
 
 
 .login-btn {
     font-weight: var(--font-normal);
     display: inline-block;
-    padding: var(--login-btn-padding);
+    padding: var(--login-large-btn-padding);
     font-size: var(--button-font-size);
-    border: 1px solid var(--outline-grey);
+    border: var(--btn-border) solid var(--outline-grey);
     color: var(--text-grey);
     background-color: var(--bg-white);
 }
@@ -27,12 +27,12 @@
 
 
 .large-btn{
-    width: 504px;
-    height: 48px;
+    width: var(--large-btn-width);
+    height: var(--large-btn-height);
     font-weight: var(--font-normal);
-    padding: 13px 30px;
+    padding: var(--login-large-btn-padding);
     font-size: var(--button-font-size);
-    border: 1px solid var(--outline-grey);
+    border: var(--btn-border) solid var(--outline-grey);
     color: var(--text-grey);
     background-color: var(--bg-white);
 }
@@ -43,36 +43,27 @@
 }
 
 .medium-btn{
-    width: 80px;
-    height: 32px;
+    width: var(--medium-btn-width);
+    height: var(--medium-btn-height);
     font-weight: var(--font-normal);
-    padding: 13px 20px;
+    padding: var(small-medium-btn-padding);
     font-size: var(--button-font-size);
-    border: 1px solid var(--purple);
+    border: var(--btn-border) solid var(--purple);
     color: var(--purple);
     background-color: var(--medium-btn-bg-purple);
 }
 
 .small-btn{
-    width: 52px;
-    height: 32px;
+    width: var(--small-btn-width);
+    height: var(--small-btn-height);
     font-weight: var(--font-bold);
-    padding: 13px 20px;
+    padding: var(--small-medium-btn-padding);
     font-size: var(--button-font-size);
-    border: 1px solid var(--outline-grey);
+    border: var(--btn-border) solid var(--outline-grey);
     background-color: var(--bg-white);
 }
 
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--button-font-size);
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 10px;
-}
+
 
 
 
