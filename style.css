@@ -18,4 +18,18 @@
   --subtitle-font-size: 28px;
   --button-font-size: 14px;
   --description-font-size: 12px;
+
+  --medium-btn-bg-purple: rgba(110,66,229,0.1);
+  --login-btn-bg-grey: rgb(117, 117, 117,0.1);
+  --login-large-btn-padding: 13px 30px;
+  --small-medium-btn-padding: 13px 20px;
+  --medium-btn-height: 32px;
+  --medium-btn-width: 80px;
+  --small-btn-height: 32px;
+  --small-btn-width: 52px;
+  --large-btn-height: 48px;
+  --large-btn-width: 504px;
+  --btn-border: 1px;
+  --btn-border-radius: 10px;
+
 }
