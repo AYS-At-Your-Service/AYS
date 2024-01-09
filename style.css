@@ -6,7 +6,7 @@
 :root{
   --black : rgba(15,15,15,1.00);
   --text-grey:rgba(84,84,84,1.00);
-  --outline-grey:rgba(117, 117, 117, 0.292);
+  --outline-grey:rgb(117, 117, 117);
   --purple:rgba(110,66,229,1.00);
   --bg-white:rgb(255, 255, 255);
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
