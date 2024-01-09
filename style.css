@@ -32,27 +32,4 @@
   --btn-border: 1px;
   --btn-border-radius: 10px;
 
-  --search-container-border-size:1px;
-  --search-container-border-color:rgb(227,227,227);
-  --search-container-border-radius:8px;
-  --search-container-padding:12px;
-  --search-container-width:300px;
-  --search-container-gap:12px;
-  --search-image-size:20px;
-
-  --drop-box-shadow:0px 4px 12px rgba(15,15,15,0.08);
-  --drop-box-container-border-size:1px;
-  --drop-box-container-border-color:rgb(227,227,227);
-  --drop-box-container-border-radius:8px;
-  --drop-box-container-padding:12px;
-  --drop-box-container-width:300px;
-  --drop-box-container-gap:12px;
-  --drop-box-elements-gap:4px;
-  --drop-box-element-image-size:20px;
-  --drop-box-element-paddingx:8px;
-  --drop-box-element-paddingy:4px;
-  --drop-box-element-gap:4px;
-  --drop-box-category-gap:12px;
-  --drop-box-category-image-size:72px;
-  --drop-box-category-image-radius:8px;
 }
