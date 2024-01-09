@@ -19,41 +19,17 @@
   --button-font-size: 14px;
   --description-font-size: 12px;
 
-  --rect-border-color:rgb(227,227,227);
-  --rect-border-radius:8px;
-  --rect-gap:12px;
+  --medium-btn-bg-purple: rgba(110,66,229,0.1);
+  --login-btn-bg-grey: rgb(117, 117, 117,0.1);
+  --login-large-btn-padding: 13px 30px;
+  --small-medium-btn-padding: 13px 20px;
+  --medium-btn-height: 32px;
+  --medium-btn-width: 80px;
+  --small-btn-height: 32px;
+  --small-btn-width: 52px;
+  --large-btn-height: 48px;
+  --large-btn-width: 504px;
+  --btn-border: 1px;
+  --btn-border-radius: 10px;
 
-  --logo-small:20px;
-
-  --dropdown-box-shadow:0px 4px 12px rgba(15,15,15,0.08);
-  --dropdown-v2-image-height:72px;
-
-  --dropdown-v2-gap:24px;
-}
-
-
-.w-400{
-  width: 400px;
-}
-.w-300{
-  width: 300px;
-}
-.h-20{
-height:20px;
-}
-.px-12{
-padding-left:12px;
-padding-right: 12px;
-}
-.px-8{
-padding-left:8px;
-padding-right: 8px;
-}
-.py-12{
-padding-top: 12px;
-padding-bottom: 12px;
-}
-.py-2{
-padding-top: 2px;
-padding-bottom: 2px;
 }
