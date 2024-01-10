@@ -1,0 +1,25 @@
+.title {
+    font-size: var(--title-font-size);
+    font-weight: var(--font-bold);
+    font-family: var(--font-family);
+    color: var(--black);
+  }
+  
+  .sub-title {
+    font-size: var(--subtitle-font-size);
+    font-weight: var(--font-bold);
+    font-family: var(--font-family);
+    color: var(--black);
+  }
+  
+  .base-text {
+    font-size: var(--base-font-size);
+    font-family: var(--font-family);
+    color: var(--text-grey);
+  }
+  
+  .description {
+    font-size: var(--description-font-size);
+    font-family: var(--font-family);
+    color: var(--outline-grey);
+  }
