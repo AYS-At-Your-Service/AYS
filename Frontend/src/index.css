@@ -54,4 +54,15 @@
   --drop-box-category-gap: 12px;
   --drop-box-category-image-size: 72px;
   --drop-box-category-image-radius: 8px;
+
+  --modal-container-width: 488px;
+  --modal-container-height: 204px;
+  --modal-container-padding: 16px;
+  --modal-container-borderrad: 16px;
+  --modal-cross-outer-margin: 12px 16px;
+  --modal-cross-outer-width: 32px;
+  --modal-cross-outer-height: 32px;
+  --modal-cross-outer-bgcolor: rgba(255, 255, 255, 1.0);
+  --modal-cross-outer-borderrad: 12px 16px;
+  --modal-cross-width-height: 20px;
 }

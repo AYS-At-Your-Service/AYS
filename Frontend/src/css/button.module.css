@@ -1,4 +1,4 @@
-.btn{
+.btn button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@
     color: var(--bg-white);
 }
 
-.medium-btn{
+.medium-btn button{
     width: var(--medium-btn-width);
     height: var(--medium-btn-height);
     font-weight: var(--font-normal);
