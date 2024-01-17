@@ -9,14 +9,26 @@
     rgba(255, 255, 255, 0) 0%
   );
   ---card-worker-pic-width: 10em;
-  ---card-worker-pic-radius: 15px;
+  ---card-worker-pic-radius: 5px;
+  ---card-letter-spacing: 0.2px;
+  ---card-line-width: 80%;
+}
+
+.card-component {
+  border-right: 1px solid var(--outline-grey);
+  border-left: 1px solid var(--outline-grey);
+  max-width: fit-content;
+  margin: auto;
+  letter-spacing: var(---card-letter-spacing);
 }
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
+  max-width: fit-content;
   font-size: var(--description-font-size);
   font-family: var(--font-family);
   color: var(--outline-grey);
@@ -85,8 +97,26 @@ button {
 }
 
 .card-view-details {
-  color: var(--purple);
+  color: var(--purple) !important;
   cursor: pointer;
+  font-size: var(--description-font-size);
+  font-weight: var(--font-bold);
 }
 
-
+.book-now > .medium-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--bg-white);
+  border-radius: var(---card-worker-pic-radius);
+}
+.card-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--outline-grey);
+}
+.card-line-linestyle {
+  width: var(---card-line-width);
+}

@@ -9,7 +9,7 @@
   --outline-grey: rgb(117, 117, 117);
   --purple: rgba(110, 66, 229, 1);
   --bg-white: rgb(255, 255, 255);
-  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-family: "Segoe UI" !important;
   --font-normal: 400;
   --font-bold: 700;
   --base-font-size: 16px;
@@ -54,4 +54,7 @@
   --drop-box-category-gap: 12px;
   --drop-box-category-image-size: 72px;
   --drop-box-category-image-radius: 8px;
+}
+.kdjf {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
