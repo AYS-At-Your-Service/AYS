@@ -1,10 +1,9 @@
-import './App.css'
-
+import  LocationSearch  from './components/LocationSearch/LocationSearch'
 function App() {
 
   return (
     <>
-      <h1>AYS</h1>
+      <LocationSearch></LocationSearch>
     </>
   )
 }

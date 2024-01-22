@@ -1,0 +1,38 @@
+:root{
+    --location-container-height:400px;
+    --location-image-width:28px;
+    --location-container-padding:16px;
+}
+.locations-container{
+    padding: var(--location-container-padding);
+    max-height: var(--location-container-height);
+    font-family:var(--font-family);
+    overflow-y: scroll;
+}
+.location-container{
+    padding:var(--location-container-padding);
+    display: flex;
+    gap:10px;
+}
+.location-container .image{
+    width:var(--location-image-width);
+    height: var(--location-image-width);
+    border-radius: 50%;
+    background-color:rgba(245,245,245,1.00);
+}
+.location-container .location-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.location-container .location-text .main-location{
+    font-weight: bold;
+}
+.location-container .location-text .sub-location{
+    font-weight: 400;
+}
+
+.breaker-small{
+    border:1px solid rgb(234, 234, 234)
+}
+
