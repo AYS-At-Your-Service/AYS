@@ -6,6 +6,7 @@ import exitImage from '../../assets/exit.svg'
 import { useCallback, useMemo, useRef, useState } from 'react'
 import { data } from '../../assets/Data'
 import Locations from '../Locations/Locations'
+import CurrentLocation from '../CurrentLocation/CurrentLocation'
 
 const LocationSearch=()=>{
 
@@ -14,8 +15,7 @@ const LocationSearch=()=>{
 
    const filteredData=useMemo(()=>{
         if(query.length==0) return [];
-        return data.filter((element)=>element.main.toLowerCase().includes(query) || element.sub.toLowerCase().includes(query));
-
+        return data.filter((element)=>element.main.toLowerCase().includes(query));
    },[query])
 
    const debouncedUpdateQuery=useCallback(()=>{
@@ -40,7 +40,7 @@ const LocationSearch=()=>{
                     <input type='text' className='text' onChange={debouncedUpdateQuery()} ref={inputRef} ></input>
                     {query.length>0 && <img className="image" src={exitImage} onClick={clearQuery}></img>}
                 </div>
-            {/* todo : location search */}
+            <CurrentLocation></CurrentLocation>
             </div>
             <div className="breaker-big"></div>
             {filteredData.length>0 && <Locations data={filteredData}></Locations>}
