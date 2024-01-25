@@ -1,0 +1,25 @@
+.header{
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom-color: rgb(237, 237, 237);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    align-self: baseline;
+    background-color: rgba(255, 255, 255, 1.00);
+    z-index: 1;
+    position: sticky;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.header > div {
+    width: 100%;
+    text-align: center;
+}
+

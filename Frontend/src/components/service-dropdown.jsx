@@ -14,12 +14,7 @@ let btnclasses = classnames(btnStyles['btn'],btnStyles['medium-btn'])
             <div className={textclasses}>Trending searches </div>
             </li>
             <div className={btnclasses} >
-            <li>
-            <button >1111</button>
-            <button>2222</button></li>
-            <li><button>3333</button>
-            <button>4444</button></li>
-            <li><button>5555</button></li>
+                111
             </div>
         </ul>
         </div>
