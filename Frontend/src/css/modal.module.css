@@ -10,8 +10,6 @@
     width: 300px;   
     height: 400px;
     padding: var(--modal-container-padding);
-    display: flex;
-    flex-wrap: wrap;
     border-color: aqua;
     border-width: 1px;
     border-style: solid;
