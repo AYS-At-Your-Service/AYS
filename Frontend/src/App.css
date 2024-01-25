@@ -1,0 +1,57 @@
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+}
+.CheckOut{
+    display: grid;
+    background-color: var(--bg-white);
+    align-items: center;
+    min-height: 100vh;
+}
+.CheckOut_Header{
+    padding: 1rem;
+    box-shadow:  4px 6px rgba(15, 15, 15, 0.08)
+}
+.CheckOut_box{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.CheckOut_main{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: var(--drop-box-shadow);
+}
+.inner_CheckOut_box{
+    margin-left: 1rem;
+}
+.small_button{
+    display: grid;
+    height: var(--medium-btn-height);
+    width: var(--medium-btm-width);
+    font-size: var(--button-font-size);
+    padding: var(--small-medium-btn-padding);
+    background-color: var(--bg-white) ;
+    border-radius: var(--btn-border-radius);
+    place-content: center center;
+}
+.CheckOut_box_Inactive{
+    display: flex;
+    flex-direction: column; 
+}
+.large_button{
+    width: 280px;
+    height: var(--large-btn-height);
+    padding: var(----login-large-btn-padding);
+    background-color: var(--purple);
+    font-size: var(--button-font-size);
+    color: var(--bg-white);
+    font-weight: var(--font-bold);
+    border-radius: var(--btn-border-radius);
+
+}

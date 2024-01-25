@@ -1,10 +1,11 @@
 import './App.css'
+import { CheckOut } from './Payment/Checkout'
 
 function App() {
 
   return (
     <>
-      <h1>AYS</h1>
+      <CheckOut />
     </>
   )
 }
