@@ -3,23 +3,21 @@ import Image from "../assets/location.webp"
 import Slot from "../assets/slot.webp"
 import paymentImage from "../assets/payment.webp"
 import {useState} from "react"
-import {useHistory} from "react-router"
+import { useNavigate } from "react-router-dom";
 
 
 export function CheckOut({amount}){
     const [number, setNumber] = useState(9999999999)
     const [address, setaddress] = useState("sabesh")
     const [slot, setslot] = useState("boomer")
-    const history = useHistory()
-
+    const navigate = useNavigate()
 
     let AddressClass = address ? 'CheckOut_box' : 'CheckOut_box_Inactive'
     let slotClass = address ? 'CheckOut_box' : 'CheckOut_box_Inactive'
 
     function handleProceed(){
-        history.push("/payment")
+        navigate("/payment")
     }
-
 
     return(
         <div className = "CheckOut">
@@ -93,7 +91,7 @@ export function CheckOut({amount}){
                         </div>
                     </div> 
                     {
-                        (slot && address) && (<button className="large_button" style={{margin: "0 auto"}} onClick={handleProceed}>Make Payment</button>)
+                        (slot && address) && (<button className="large_button" style={{margin: "0 auto"}} onClick={handleProceed}> Pay {amount} </button>)
                     } 
                 </div>
             </div>

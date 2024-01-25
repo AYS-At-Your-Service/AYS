@@ -55,3 +55,9 @@ body{
     border-radius: var(--btn-border-radius);
 
 }
+.UpiBox{
+    display: grid;
+    padding: 2rem;
+    margin: 0 auto;
+    box-shadow: var(--drop-box-shadow);
+}
