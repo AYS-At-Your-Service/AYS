@@ -1,4 +1,4 @@
-:root{
+:root {
     --modal-container-width: 488px;
     --modal-container-height: 204px;
     --modal-container-padding: 16px;
@@ -11,15 +11,19 @@
     --modal-cross-width-height: 20px;
 }
 
-.modal-container{
-    width: var(--modal-container-width);   
+.modal-container {
+    width: var(--modal-container-width);
+    max-width: 100%;
     height: var(--modal-container-height);
     padding: var(--modal-container-padding);
     display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-
-.modal-cross-outer{
+.modal-cross-outer {
     margin: var(--modal-cross-outer-margin);
     width: var(--modal-cross-outer-width);
     height: var(--modal-cross-outer-height);
@@ -32,19 +36,39 @@
     flex-shrink: 0;
 }
 
-.modal-cross{
+.modal-cross {
     margin: var(--modal-cross-outer-margin);
     width: var(--modal-cross-width-height);
     height: var(--modal-cross-width-height);
     cursor: pointer;
 }
 
-.modal{
+.modal {
     float: right;
     background-color: var(--modal-cross-outer-bgcolor);
     border-radius: var(--modal-container-borderrad);
 }
 
-body{
+body {
     background-color: black;
+}
+
+.modal button {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #ddd; 
+    border-color: #ccc; 
+}
+
+.modal button:hover {
+    background-color: #f0f0f0; 
 }
