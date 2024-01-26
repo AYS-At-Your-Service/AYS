@@ -1,3 +1,6 @@
+import { useState } from "react"
+import Modal from "./Modal"
+
 const ListingVendors = () => {
     const data = [{
         id: 1,
@@ -33,13 +36,25 @@ const ListingVendors = () => {
         img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
     ]
+    const [isModalOpen, setModalisOpen] = useState(false)
+
+    function handleClick() {
+        setModalisOpen(true)
+    }
+
+    function closeModal() {
+        setModalisOpen(false)
+    }
+
+
+
     return (
         <>
 
             <div className="card-component">
                 {data.map((data) => (
                     <>
-                        <div className="card">
+                        <div  className="card">
                             <div className="card-content-section base-text">
 
                                 <div className="card-name-section">
@@ -56,7 +71,7 @@ const ListingVendors = () => {
                                 <div className="description">
                                     Installation of small fittings( towel hanger,hotel etc)
                                 </div>
-                                <div className="card-view-details  ">
+                                <div className="card-view-details" onClick={handleClick}>
                                     View Details
                                 </div>
                             </div>
@@ -65,7 +80,7 @@ const ListingVendors = () => {
                                     <img src={data.img} className="card-worker-pic" alt="pic" />
 
                                     <div className="book-now card-btn-abs">
-                                        <button className="medium-btn">
+                                        <button className="medium-btn description" >
                                             Book Now
                                         </button>
                                     </div>
@@ -80,6 +95,7 @@ const ListingVendors = () => {
                 ))}
 
             </div>
+            {isModalOpen ? <Modal closeModal={closeModal} /> : ""}
         </>
     )
 }
