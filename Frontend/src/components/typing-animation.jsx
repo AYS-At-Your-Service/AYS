@@ -1,29 +1,10 @@
 //@ts-nocheck
 import React, { useState, useEffect } from 'react';
-import styled, { keyframes } from 'styled-components';
+import inputStyles from '../css/Input.module.css'
 
-const typing = keyframes`
-  from { width: 0 }
-`;
-
-const StyledInput = styled.input`
-  color: #f5f5f5;
-  background: none;
-  border: none;
-  padding: 0 10px;
-  width: 80%;
-  outline: none;
-  font-family: ${props => props.fontFamily || 'monospace'};
-  font-size: 15px;
-  &::placeholder {
-    animation: ${typing} 2s steps(100, end);
-    overflow: hidden;
-    white-space: nowrap;
-  }
-`;
 const searchFor = 'Search for ';
 
-const TypingAnimation = ({placeholders=[], value='', onChange, renderIcon, fontFamily, containerStyle={}, inputStyle={}}) => {
+const TypingAnimation = ({placeholders=[], value='', onChange, containerStyle={}, inputStyle={}}) => {
   const [index, setIndex] = useState(0);
   const [placeholder, setPlaceholder] = useState('');
 
@@ -50,9 +31,9 @@ const TypingAnimation = ({placeholders=[], value='', onChange, renderIcon, fontF
   }, [index]);
 
   return (
-      <StyledInput fontFamily={fontFamily} placeholder={searchFor + placeholder} onChange={(e) => {
+      <input className={inputStyles['text']} placeholder={searchFor + placeholder} onChange={(e) => {
         onChange && onChange(e.target.value);
-      }} value={value} style={{...inputStyle}}/>
+      }} value={value} />
   );
 };
 

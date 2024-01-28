@@ -7,13 +7,13 @@
 }
 
 .modal-vertical-container{
-    width: 300px;   
     height: 400px;
     padding: var(--modal-container-padding);
-    border-color: aqua;
+    border-color: rgb(237, 237, 237);;
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;
+    background-color: white;
 }
 
 .modal-vertical-container ul{

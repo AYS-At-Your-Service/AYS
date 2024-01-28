@@ -1,5 +1,5 @@
 .header{
-    align-items: stretch;
+    align-items: center;
     box-sizing: border-box;
     display: flex;
     flex-basis: auto;
@@ -20,8 +20,25 @@
 
 .header > div {
     width: 100%;
-    text-align: center;
 }
 
+.logo{
+    width: 154px;
+}
+
+.dd{
+    align-items: center;
+    margin-top: -10px;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 2;
+    position: sticky;
+}
+
+.dd > div{
+    width: 100%;
+}
 
 

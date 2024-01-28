@@ -6,7 +6,7 @@ import classnames from 'classnames'
 function ServiceDropdown(btnTextArr){
     let textArr = ['Professional Cleaning','Salon','Electricians','Plumbers','Carpenters','Washing machine repair'];
 
-let textList = [];
+    let textList = [];
     let textclasses = classnames(textStyles['sub-title'],textStyles['sub-title-sm'])
     let btnclasses = classnames(btnStyles['btn'],btnStyles['small-btn-non-bold'])
     let w = "13px";

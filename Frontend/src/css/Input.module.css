@@ -9,9 +9,26 @@
     cursor: pointer;
     column-gap:var(--search-container-gap);
 }
+&::placeholder {
+    animation: 2s steps(100, end);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  @keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+
 .search-box-container .img{
     width: var(--search-image-size);
 }
+
+
+  
+
 .search-box-container .text{
     border: none;
     outline: none;
