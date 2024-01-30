@@ -5,7 +5,7 @@ import  backImage from  '../../assets/back.svg'
 import exitImage from '../../assets/exit.svg'
 import { useCallback, useMemo, useRef, useState } from 'react'
 import { data } from '../../assets/Data'
-import Locations from '../Locations/Locations'
+import LocationsContainer from '../LocationsContainer/LocationsContainer'
 import CurrentLocation from '../CurrentLocation/CurrentLocation'
 
 const LocationSearch=()=>{
@@ -43,7 +43,7 @@ const LocationSearch=()=>{
             <CurrentLocation></CurrentLocation>
             </div>
             <div className="breaker-big"></div>
-            {filteredData.length>0 && <Locations data={filteredData}></Locations>}
+            {filteredData.length>0 && <LocationsContainer data={filteredData}/>}
 
             <div className="footer"> powered by AYS </div>
         </div>

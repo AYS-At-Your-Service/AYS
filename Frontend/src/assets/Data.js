@@ -1,82 +1,102 @@
 export const data = [
   {
-    "main": "Chennai",
-    "sub": "123, Marina Beach Road, Chennai"
+    key: 1,
+    main: "Chennai",
+    sub: "123, Marina Beach Road, Chennai"
   },
   {
-    "main": "Coimbatore",
-    "sub": "456, Gandhipuram Street, Coimbatore"
+    key: 2,
+    main: "Coimbatore",
+    sub: "456, Gandhipuram Street, Coimbatore"
   },
   {
-    "main": "Madurai",
-    "sub": "789, Meenakshi Amman Temple Road, Madurai"
+    key: 3,
+    main: "Madurai",
+    sub: "789, Meenakshi Amman Temple Road, Madurai"
   },
   {
-    "main": "Trichy",
-    "sub": "101, Rockfort Temple Street, Trichy"
+    key: 4,
+    main: "Trichy",
+    sub: "101, Rockfort Temple Street, Trichy"
   },
   {
-    "main": "Salem",
-    "sub": "234, Yercaud Hills Road, Salem"
+    key: 5,
+    main: "Salem",
+    sub: "234, Yercaud Hills Road, Salem"
   },
   {
-    "main": "Tirunelveli",
-    "sub": "567, Nellaiappar Temple Street, Tirunelveli"
+    key: 6,
+    main: "Tirunelveli",
+    sub: "567, Nellaiappar Temple Street, Tirunelveli"
   },
   {
-    "main": "Vellore",
-    "sub": "890, VIT University Campus, Vellore"
+    key: 7,
+    main: "Vellore",
+    sub: "890, VIT University Campus, Vellore"
   },
   {
-    "main": "Erode",
-    "sub": "112, Periyar Memorial Park, Erode"
+    key: 8,
+    main: "Erode",
+    sub: "112, Periyar Memorial Park, Erode"
   },
   {
-    "main": "Tiruppur",
-    "sub": "345, Textile City Avenue, Tiruppur"
+    key: 9,
+    main: "Tiruppur",
+    sub: "345, Textile City Avenue, Tiruppur"
   },
   {
-    "main": "Kanyakumari",
-    "sub": "678, Vivekananda Rock Memorial, Kanyakumari"
+    key: 10,
+    main: "Kanyakumari",
+    sub: "678, Vivekananda Rock Memorial, Kanyakumari"
   },
   {
-    "main": "Thanjavur",
-    "sub": "131, Brihadeeswarar Temple Street, Thanjavur"
+    key: 11,
+    main: "Thanjavur",
+    sub: "131, Brihadeeswarar Temple Street, Thanjavur"
   },
   {
-    "main": "Karur",
-    "sub": "222, Pasupathipalayam Road, Karur"
+    key: 12,
+    main: "Karur",
+    sub: "222, Pasupathipalayam Road, Karur"
   },
   {
-    "main": "Nagercoil",
-    "sub": "789, Nagaraja Temple Street, Nagercoil"
+    key: 13,
+    main: "Nagercoil",
+    sub: "789, Nagaraja Temple Street, Nagercoil"
   },
   {
-    "main": "Dindigul",
-    "sub": "456, Sirumalai Hills Road, Dindigul"
+    key: 14,
+    main: "Dindigul",
+    sub: "456, Sirumalai Hills Road, Dindigul"
   },
   {
-    "main": "Kanchipuram",
-    "sub": "101, Ekambareswarar Temple Road, Kanchipuram"
+    key: 15,
+    main: "Kanchipuram",
+    sub: "101, Ekambareswarar Temple Road, Kanchipuram"
   },
   {
-    "main": "Pollachi",
-    "sub": "234, Anamalai Wildlife Sanctuary Road, Pollachi"
+    key: 16,
+    main: "Pollachi",
+    sub: "234, Anamalai Wildlife Sanctuary Road, Pollachi"
   },
   {
-    "main": "Cuddalore",
-    "sub": "567, Silver Beach Road, Cuddalore"
+    key: 17,
+    main: "Cuddalore",
+    sub: "567, Silver Beach Road, Cuddalore"
   },
   {
-    "main": "Tiruvannamalai",
-    "sub": "890, Arunachaleswarar Temple Street, Tiruvannamalai"
+    key: 18,
+    main: "Tiruvannamalai",
+    sub: "890, Arunachaleswarar Temple Street, Tiruvannamalai"
   },
   {
-    "main": "Ooty",
-    "sub": "112, Nilgiri Hills Road, Ooty"
+    key: 19,
+    main: "Ooty",
+    sub: "112, Nilgiri Hills Road, Ooty"
   },
   {
-    "main": "Ramanathapuram",
-    "sub": "345, Raja Palace Road, Ramanathapuram"
+    key: 20,
+    main: "Ramanathapuram",
+    sub: "345, Raja Palace Road, Ramanathapuram"
   }
 ];
