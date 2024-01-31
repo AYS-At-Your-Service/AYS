@@ -9,12 +9,13 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
   useEffect(() => {
     const generateDates = () => {
       const currentDate = new Date();
-      const nextTwoDays = [1, 2].map((day) => {
+      const nextTwoDays = [0, 1, 2].map((day) => {
         const date = new Date();
         date.setDate(currentDate.getDate() + day);
         return date;
       });
-      setDates([currentDate, ...nextTwoDays]);
+      setDates(nextTwoDays);
+      setSelectedDate(nextTwoDays[0]); // Select the first date by default
     };
 
     generateDates();
@@ -22,6 +23,7 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
 
   const handleDateClick = (date) => {
     setSelectedDate(date);
+    setSelectedTimeSlot(null); 
   };
 
   const handleTimeSlotClick = (timeSlot) => {
@@ -29,7 +31,8 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
   };
 
   const handleProceedClick = () => {
-    onProceed(selectedDate, selectedTimeSlot);
+    onProceed(selectedDate, selectedTimeSlot); //This will return the selected date and time slot
+    onClose();
   };
 
   return (
@@ -41,7 +44,11 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
           </div>
         </div>
         <div className="content-container">
-          
+          <div>
+          <h3>Get a serivce later</h3>
+          <p>Service at the earliest available time slot</p>
+          </div>
+         
           {/* Date Section */}
           <div className="date-section">
             {dates.map((date, index) => (
@@ -49,12 +56,13 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
                 key={index}
                 onClick={() => handleDateClick(date)}
                 className={`date-button ${selectedDate === date ? 'selected' : ''}`}
-              >
+              >       {date.toLocaleDateString('en-US', { weekday: 'short' })}
+                   <br />
                 {date.getDate()}
               </button>
             ))}
           </div>
-
+             <h3>Select start time of service</h3>
           {/* Time section */}
           <div className="time-section">
             {Array.from({ length: 26 }).map((_, index) => {
@@ -75,7 +83,7 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
           </div>
         </div>
         {/* Proceed Button */}
-        <button className="proceed-button" onClick={handleProceedClick} disabled={!selectedTimeSlot}>
+        <button className="proceed-button" onClick={handleProceedClick} disabled={!selectedTimeSlot} >
           Proceed
         </button>
       </div>
