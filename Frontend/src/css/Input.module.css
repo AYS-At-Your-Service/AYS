@@ -9,7 +9,8 @@
     cursor: pointer;
     column-gap:var(--search-container-gap);
 }
-&::placeholder {
+
+::placeholder {
     animation: 2s steps(100, end);
     overflow: hidden;
     white-space: nowrap;
@@ -26,10 +27,7 @@
     width: var(--search-image-size);
 }
 
-
-  
-
-.search-box-container .text{
+.text{
     border: none;
     outline: none;
     flex-grow: 1;

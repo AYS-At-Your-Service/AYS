@@ -22,23 +22,6 @@
     width: 100%;
 }
 
-.logo{
-    width: 154px;
-}
 
-.dd{
-    align-items: center;
-    margin-top: -10px;
-    display: flex;
-    flex-basis: auto;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    z-index: 2;
-    position: sticky;
-}
-
-.dd > div{
-    width: 100%;
-}
 
 

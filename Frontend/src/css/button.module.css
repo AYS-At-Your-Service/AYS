@@ -1,9 +1,9 @@
 .btn{
     justify-content: center;
     text-align: center;
-    padding: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    padding: var(--btn-basic-padding);
+    margin-right: var(--btn-basic-margin);
+    margin-bottom: var(--btn-basic-margin);
     align-items: center;
     cursor: pointer;
     border-radius: var(--btn-border-radius);
@@ -61,11 +61,11 @@
 }
 
 .small-btn-non-bold{
-    color: grey;
+    color: var(--btn-smallbtn-non-bold-color);
     height: var(--small-btn-height);
     border: var(--btn-border) solid var(--outline-grey);
     background-color: var(--bg-white);
-    font-size: 0.8em;
+    font-size: var(--btn-smallbtn-non-bold-size);
 }
 
 

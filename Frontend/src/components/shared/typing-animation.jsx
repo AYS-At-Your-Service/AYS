@@ -1,8 +1,8 @@
 //@ts-nocheck
 import React, { useState, useEffect } from 'react';
-import inputStyles from '../css/Input.module.css'
+import inputStyles from '../../css/Input.module.css'
+import * as consts from '../shared/typing-animation.consts.js'
 
-const searchFor = 'Search for ';
 
 const TypingAnimation = ({placeholders=[], value='', onChange, containerStyle={}, inputStyle={}}) => {
   const [index, setIndex] = useState(0);
@@ -31,10 +31,10 @@ const TypingAnimation = ({placeholders=[], value='', onChange, containerStyle={}
   }, [index]);
 
   return (
-      <input className={inputStyles['text']} placeholder={searchFor + placeholder} onChange={(e) => {
+      <input className={inputStyles['text']} placeholder={consts.SEARCHFOR + placeholder} onChange={(e) => {
         onChange && onChange(e.target.value);
       }} value={value} />
   );
 };
-
+  
 export default TypingAnimation;

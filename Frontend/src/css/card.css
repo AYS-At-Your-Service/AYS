@@ -1,17 +1,3 @@
-:root {
-  ---card-padding: 40px;
-  ---card-gap: 20px;
-  ---card-content-section-gap: 10px;
-  ---card-name-section-margin-top: 20px;
-  ---card-line-between-background-image: linear-gradient(
-    to right,
-    rgb(227, 227, 227) 40%,
-    rgba(255, 255, 255, 0) 0%
-  );
-  ---card-worker-pic-width: 10em;
-  ---card-worker-pic-radius: 15px;
-}
-
 .card {
   display: flex;
   justify-content: center;
