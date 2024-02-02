@@ -16,8 +16,8 @@ function ServiceDropdown(btnTextArr){
     textArr.forEach(element => {
         textList.push(
         <>
-            <button className={btnclasses}>
-                <img src={trendingSVG} alt='trend' className={serviceDropdownStyles['searchsvg']}></img>
+            <button key={element.key} className={btnclasses}>
+                <img key={element.key} src={trendingSVG} alt='trend' className={serviceDropdownStyles['searchsvg']}></img>
                  {element}
                 </button>
         </>
