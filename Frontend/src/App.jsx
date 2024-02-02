@@ -1,15 +1,13 @@
-import React from 'react';
-
-import './App.css';
+import './App.css'
 
 function App() {
 
-
   return (
-    <div>
-      
-    </div>
-  );
+    <>
+      <h1>AYS</h1>
+    </>
+  )
+
 }
 
-export default App;
+export default App
