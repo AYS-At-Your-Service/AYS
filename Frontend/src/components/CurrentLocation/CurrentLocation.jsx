@@ -1,5 +1,6 @@
 import currentLocation from '../../assets/currentLocation.svg'
 import './currentLocation.css'
+import {USECURRENTLOCATION} from './CurrentLocation.constant';
 const CurrentLocation = () => {
   const getCurrentCity = () => {
     if (navigator.geolocation) {
@@ -21,7 +22,7 @@ const CurrentLocation = () => {
   return (
     <div className='current-location-container'  onClick={getCurrentCity}>
       <img src={currentLocation} alt="" className='image' />
-      <div className="text">Use current location</div>
+      <div className="text">{USECURRENTLOCATION}</div>
     </div>
   );
 };
