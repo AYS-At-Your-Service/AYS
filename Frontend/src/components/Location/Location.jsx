@@ -4,7 +4,7 @@ import locationImage from '../../assets/location.svg'
 export default function Location({data}){
     return(
         <>
-            <div className="location-container" onClick={()=>{console.log(data.main)}}>
+            <div className="location-container" />
 
                 <div className="image">
                     <img src={locationImage}></img>

@@ -3,10 +3,8 @@ import './currentLocation.css'
 const CurrentLocation = () => {
   const getCurrentCity = () => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-    } else {
-      console.log("Geolocation is not supported by this browser.");
-    }
+      navigator.geolocation.getCurrentPosition(successCallback);
+    } 
   };
 
   const successCallback = (position) => {
@@ -17,15 +15,7 @@ const CurrentLocation = () => {
       .then(response => response.json())
       .then(data => {
         const city = data.city;
-        console.log(`Current city: ${city}`);
       })
-      .catch(error => {
-        console.error("Error fetching city information:", error);
-      });
-  };
-
-  const errorCallback = (error) => {
-    console.error("Error getting location:", error.message);
   };
 
   return (
