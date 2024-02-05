@@ -4,7 +4,7 @@ import '../../css/Input.css'
 import  backImage from  '../../assets/back.svg'
 import exitImage from '../../assets/exit.svg'
 import { useCallback, useMemo, useRef, useState } from 'react'
-import { data } from '../../assets/Data'
+import { locationData } from '../../services/location-data.service'
 import LocationsContainer from '../LocationsContainer/LocationsContainer'
 import CurrentLocation from '../CurrentLocation/CurrentLocation'
 
@@ -15,7 +15,7 @@ const LocationSearch=()=>{
 
    const filteredData=useMemo(()=>{
         if(query.length==0) return [];
-        return data.filter((element)=>element.main.toLowerCase().includes(query));
+        return locationData.filter((element)=>element.main.toLowerCase().includes(query));
    },[query])
 
    const debouncedUpdateQuery=useCallback(()=>{
