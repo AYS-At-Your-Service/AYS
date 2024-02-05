@@ -2,9 +2,7 @@ import  LocationSearch  from './components/LocationSearch/LocationSearch'
 function App() {
 
   return (
-    <>
-      <LocationSearch></LocationSearch>
-    </>
+    <h1>AYS</h1>
   )
 }
 
