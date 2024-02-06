@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { DEFAULTCONTENTOFH3,DEFAULTCONTENTOFH32,DEFAULTCONTENTOFP,DEFAULTBUTTON } from './prefered-timeslot.consts';
-import './timeslot.css';
+import './timeslot.module.css';
 
 const PreferedTimeSlot = ({ onClose, onProceed }) => {
   const [selectedDate, setSelectedDate] = useState(null);
