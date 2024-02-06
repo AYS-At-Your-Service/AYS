@@ -7,6 +7,7 @@ import { useCallback, useMemo, useRef, useState } from 'react'
 import { locationData } from '../../services/location-data.service'
 import LocationsContainer from '../LocationsContainer/LocationsContainer'
 import CurrentLocation from '../CurrentLocation/CurrentLocation'
+import { POWEREDBYAYS } from './LocationSearch.constant'
 
 const LocationSearch=()=>{
 
@@ -45,7 +46,7 @@ const LocationSearch=()=>{
             <div className="breaker-big"></div>
             {filteredData.length>0 && <LocationsContainer data={filteredData}/>}
 
-            <div className="footer"> powered by AYS </div>
+            <div className="footer">{POWEREDBYAYS}</div>
         </div>
     )
 }
