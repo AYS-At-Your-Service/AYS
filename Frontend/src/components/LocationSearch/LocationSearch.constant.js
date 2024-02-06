@@ -1,0 +1,1 @@
+export const POWEREDBYAYS="Powered by AYS";
