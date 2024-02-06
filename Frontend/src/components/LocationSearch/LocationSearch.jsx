@@ -1,6 +1,6 @@
 import './LocationSearch.css'
 import '../../css/modal.module.css'
-import '../../css/Input.module.css'
+import '../../css/input.module.css'
 import  backImage from  '../../assets/back.svg'
 import exitImage from '../../assets/exit.svg'
 import { useCallback, useMemo, useRef, useState } from 'react'

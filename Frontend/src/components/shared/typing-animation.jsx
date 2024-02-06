@@ -1,6 +1,6 @@
 //@ts-nocheck
 import React, { useState, useEffect } from 'react';
-import inputStyles from '../../css/Input.module.css'
+import inputStyles from '../../css/input.module.css'
 import * as consts from '../shared/typing-animation.consts.js'
 
 
