@@ -1,7 +1,11 @@
+:root{
+    --location-container-gap:16px;
+}
+
 .location-container{
     padding:var(--location-container-padding);
     display: flex;
-    gap:10px;
+    gap:var(--location-container-gap);
 }
 .location-container .image{
     width:var(--location-image-width);
