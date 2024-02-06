@@ -30,6 +30,10 @@
   --large-btn-width: 504px;
   --btn-border: 1px;
   --btn-border-radius: 10px;
+  --btn-basic-padding: 10px;
+  --btn-basic-margin: 10px;
+  --btn-smallbtn-non-bold-size: 0.8em;
+  --btn-smallbtn-non-bold-color: grey;
 
   --search-container-border-size: 1px;
   --search-container-border-color: rgb(227, 227, 227);
@@ -54,4 +58,32 @@
   --drop-box-category-gap: 12px;
   --drop-box-category-image-size: 72px;
   --drop-box-category-image-radius: 8px;
+
+  --modal-container-width: 400px;
+  --modal-container-height: 400px;
+  --modal-container-padding: 16px;
+  --modal-container-borderrad: 10px;
+  --modal-container-bordercolor: rgb(237, 237, 237);
+  --modal-container-borderwidth: 1px;
+  --modal-container-bgcolor: white;
+  --modal-cross-outer-margin: 12px 16px;
+  --modal-cross-outer-width: 32px;
+  --modal-cross-outer-height: 32px;
+  --modal-cross-outer-bgcolor: rgba(255, 255, 255, 1.0);
+  --modal-cross-outer-borderrad: 12px 16px;
+  --modal-cross-width-height: 20px;
+
+  ---card-padding: 40px;
+  ---card-gap: 20px;
+  ---card-content-section-gap: 10px;
+  ---card-name-section-margin-top: 20px;
+  ---card-line-between-background-image: linear-gradient(
+    to right,
+    rgb(227, 227, 227) 40%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  ---card-worker-pic-width: 10em;
+  ---card-worker-pic-radius: 15px;
+
+  --dropdown-top-margin: -10px;
 }

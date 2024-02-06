@@ -9,10 +9,25 @@
     cursor: pointer;
     column-gap:var(--search-container-gap);
 }
-.search-box-container .image{
-    width:var(--search-image-size);
+
+::placeholder {
+    animation: 2s steps(100, end);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  @keyframes typing {
+    from {
+        width: 0;
+    }
 }
-.search-box-container .text{
+
+
+.search-box-container .img{
+    width: var(--search-image-size);
+}
+
+.text{
     border: none;
     outline: none;
     flex-grow: 1;

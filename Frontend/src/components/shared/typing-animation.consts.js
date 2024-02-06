@@ -1,0 +1,1 @@
+export const SEARCHFOR = 'Search for ';
