@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 
 export function CheckOut({amount}){
     const [number, setNumber] = useState(9999999999)
-    const [address, setaddress] = useState("sabesh")
-    const [slot, setslot] = useState("boomer")
+    const [address, setaddress] = useState()
+    const [slot, setslot] = useState()
     const navigate = useNavigate()
 
     let AddressClass = address ? 'CheckOut_box' : 'CheckOut_box_Inactive'
@@ -60,6 +60,7 @@ export function CheckOut({amount}){
                         }
                         
                     </div>
+
                         { !address && (
                                 <button className="large_button" style={{margin: "0 auto"}}>Set Address</button>
                         )}
@@ -91,10 +92,11 @@ export function CheckOut({amount}){
                         </div>
                     </div> 
                     {
-                        (slot && address) && (<button className="large_button" style={{margin: "0 auto"}} onClick={handleProceed}> Pay {amount} </button>)
+                        (slot && address) && (<div style={{display: "grid", justifyContent: "center"}}><button className="large_button"  onClick={handleProceed}> Pay {amount} </button></div>)
                     } 
                 </div>
             </div>
         </div>
     )
 }
+

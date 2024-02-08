@@ -1,4 +1,13 @@
-
+:root{
+    --Least-padding: 1rem;
+    --Next-L-padding: 2rem;
+    --Button-width: 280px;
+    --Average-width-percent: 50%;
+    --Row-gap: 2rem;
+    --Least-margin: 1rem;
+    --MinHeight: 100vh;
+    --Customized-box: 4px 6px rgba(15, 15, 15, 0.08);
+}
 body{
     font-family: var(--font-family);
     font-size: var(--base-font-size);
@@ -7,28 +16,29 @@ body{
     display: grid;
     background-color: var(--bg-white);
     align-items: center;
-    min-height: 100vh;
+    min-height: var(--MinHeight);
 }
 .CheckOut_Header{
-    padding: 1rem;
-    box-shadow:  4px 6px rgba(15, 15, 15, 0.08)
+    padding: var(--Least-padding);
+    box-shadow: var(--Customized-box);
 }
 .CheckOut_box{
     display: flex;
-    padding: 1rem;
+    padding: var(--Least-padding);
     justify-content: space-between;
 }
 
 .CheckOut_main{
     display: flex;
-    width: 50%;
+    width: var(--Average-width-percent);
     flex-direction: column;
     margin: 0 auto;
-    padding: 2rem;
+    padding: var(--Next-L-padding);
     box-shadow: var(--drop-box-shadow);
+    row-gap: var(--Row-gap);
 }
 .inner_CheckOut_box{
-    margin-left: 1rem;
+    margin-left: var(--Least-margin);
 }
 .small_button{
     display: grid;
@@ -45,7 +55,7 @@ body{
     flex-direction: column; 
 }
 .large_button{
-    width: 280px;
+    width: var(--Button-width);
     height: var(--large-btn-height);
     padding: var(----login-large-btn-padding);
     background-color: var(--purple);
@@ -57,7 +67,8 @@ body{
 }
 .UpiBox{
     display: grid;
-    padding: 2rem;
+    padding: var(--Next-L-padding);
     margin: 0 auto;
     box-shadow: var(--drop-box-shadow);
+    background-color: var(--bg-white);
 }
