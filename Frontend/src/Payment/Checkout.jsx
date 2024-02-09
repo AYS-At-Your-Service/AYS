@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 
 export function CheckOut(){
-    const {phone} = PhoneFunction(999999999)
+    const {phone} = PhoneFunction()
     const {address} = AddressFunction()
     const {slot} = SlotFunction()
     
@@ -31,15 +31,15 @@ export function CheckOut(){
                 <img src = {Image} className="Image"></img>
                 <div>
                   <h4>Send Booking Details</h4>
-                  <p>91 <span>{phone}</span></p>
+                  <p>+91 <span>{phone}</span></p>
                 </div> 
             </div>
             <div>
-
+                {/* I leaves it as it's In order to avoid the confusion between the further Inside-Box  */}
             </div>
           </div>
           <div>
-
+            {/* I leaves it as it's In order to avoid the confusion between the further Inside-Box  */}
           </div>
         </div>
         

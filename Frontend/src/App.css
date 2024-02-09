@@ -15,6 +15,7 @@
     --Image-Margin: 1.2rem;
     --Image-width: 28px;
     --Least-margin: 1rem;
+    --Next-least-margin: 2.5rem;
     --MinHeight: 100vh;
     --Customized-outline: 0px 0px 4px 6px rgba(15, 15, 15, 0.08);
     --Customized-box:  4px 6px rgba(15, 15, 15, 0.08);
@@ -38,7 +39,7 @@
     width : 100%;
     min-height: 100vh;
     display: grid; 
-     align-items: flex-end;  
+     align-items: center;  
     background-color: var(--background-gray);
     color: var(--black);
     row-gap: var(--Row-gap);
@@ -47,10 +48,11 @@
   }
   .Box-Wrapper{
     display: flex;
-    min-width: var(--Min-Width); 
+    width: var(--Min-Width); 
     flex-direction: column; 
     background-color: var(--bg-white); 
     margin: 0 auto; 
+    margin-top: var(--Next-least-margin);
     box-shadow: var(--Customized-outline);
   }
   .Inside-Box{
@@ -94,5 +96,12 @@
       color: var(--bg-white);
       font-weight: var(--font-bold);
       border-radius: var(--btn-border-radius);
-  }
+}
+
+ @media screen and (min-width: 1000px) {
+    .Box-Wrapper{
+        width: 550px
+    }
+} 
+ 
   
