@@ -7,9 +7,9 @@ import { useNavigate } from "react-router-dom";
 
 
 export function CheckOut({amount}){
-    const [number, setNumber] = useState(9999999999)
-    const [address, setaddress] = useState()
-    const [slot, setslot] = useState()
+    const [number, setNumber] = useState()
+    const [address, setaddress] = useState(null)
+    const [slot, setslot] = useState(null)
     const navigate = useNavigate()
 
     let AddressClass = address ? 'CheckOut_box' : 'CheckOut_box_Inactive'
@@ -37,33 +37,37 @@ export function CheckOut({amount}){
                     </div>
                 </div>
                 <div className= {AddressClass}>
-                    <div style={{display: "flex"}}>
-                        <div className="inner_CheckOut_box">
-                            <img src = {Image}></img>
+                        <div style={{display: "flex"}}>
+                            <div className="inner_CheckOut_box">
+                                <img src = {Image}></img>
+                            </div>
+                            <div className="inner_CheckOut_box">
+                                <h3>Address</h3>
+                                {
+                                    address && (
+                                        <p>{address}</p>
+                                    )
+                                }
+                                
+                            </div>
+                        
                         </div>
-                        <div className="inner_CheckOut_box">
-                            <h3>Address</h3>
+                        <div>
                             {
                                 address && (
-                                    <p>{address}</p>
+                                    <button className="small_button" >Edit</button>
                                 )
                             }
                             
                         </div>
-                      
-                    </div>
-                    <div>
-                        {
-                            address && (
-                                <button className="small_button" >Edit</button>
-                            )
-                        }
-                        
-                    </div>
-
+                    
                         { !address && (
-                                <button className="large_button" style={{margin: "0 auto"}}>Set Address</button>
-                        )}
+                                    <button className="large_button" style={{margin: "0 auto"}}>Set Address</button>
+                            )}
+
+                    
+
+                        
                 </div>
                 <div className= {slotClass}>
                     <div style={{display: "flex"}}>
@@ -88,7 +92,8 @@ export function CheckOut({amount}){
                             <img src={paymentImage}></img>
                         </div>
                         <div>
-                            Payment
+                            <h3>  Payment </h3>
+                           
                         </div>
                     </div> 
                     {
