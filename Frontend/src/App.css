@@ -12,12 +12,14 @@
     --Average-width-percent: 50%;
     --background-gray: #fdfbfbe5;
     --Row-gap: 2rem;
+    --Image-Margin: 1.2rem;
+    --Image-width: 28px;
     --Least-margin: 1rem;
     --MinHeight: 100vh;
     --Customized-outline: 0px 0px 4px 6px rgba(15, 15, 15, 0.08);
     --Customized-box:  4px 6px rgba(15, 15, 15, 0.08);
     --Violet-padding: 18px 30px;
-    --Min-Width: 30%;
+    --Min-Width: 50%;
   }
   body{
     font-family: var(--font-family);
@@ -68,8 +70,8 @@
     margin-top: var(--Least-margin);
   }
   .Image{
-    margin-right: 1.2rem;
-    min-width: 28px;
+    margin-right: var(--Image-Margin);
+    min-width: var(--Image-width);
   }
   .smallButton{
     display: grid;

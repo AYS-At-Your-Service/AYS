@@ -10,11 +10,11 @@ import { useNavigate } from "react-router-dom";
 
 export function CheckOut(){
     const {phone} = PhoneFunction(999999999)
-    const {address} = AddressFunction('si')
-    const {slot} = SlotFunction('ti')
+    const {address} = AddressFunction()
+    const {slot} = SlotFunction()
     
     const navigate = useNavigate()
-    
+
     function handleProceed(){
         navigate("/payment")
     }
@@ -49,7 +49,7 @@ export function CheckOut(){
                 <img src = {Image} className="Image"></img>
                 <div>
                   <h4>Address</h4>
-                  <p></p>
+                  <p>{address}</p>
                 </div> 
             </div>
             <div>
@@ -71,7 +71,7 @@ export function CheckOut(){
                 <img src = {SlotImage} className="Image"></img>
                 <div>
                   <h4>Slot</h4>
-                  <p></p>
+                  <p>{slot}</p>
                 </div> 
             </div>
             <div>
