@@ -1,46 +1,77 @@
-:root{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
     --Least-padding: 1rem;
     --Next-L-padding: 2rem;
+    --padding-Bottom: 0.5rem;
+    --Bottom-Margin: 1rem;
     --Button-width: 280px;
     --Average-width-percent: 50%;
+    --background-gray: #fdfbfbe5;
     --Row-gap: 2rem;
     --Least-margin: 1rem;
     --MinHeight: 100vh;
-    --Customized-box: 4px 6px rgba(15, 15, 15, 0.08);
-}
-body{
+    --Customized-outline: 0px 0px 4px 6px rgba(15, 15, 15, 0.08);
+    --Customized-box:  4px 6px rgba(15, 15, 15, 0.08);
+    --Violet-padding: 18px 30px;
+    --Min-Width: 30%;
+  }
+  body{
     font-family: var(--font-family);
     font-size: var(--base-font-size);
-}
-.CheckOut{
-    display: grid;
-    background-color: var(--bg-white);
-    align-items: center;
-    min-height: var(--MinHeight);
-}
-.CheckOut_Header{
+  }
+  .CheckOut_Header{
+    position: absolute;
     padding: var(--Least-padding);
     box-shadow: var(--Customized-box);
-}
-.CheckOut_box{
-    display: flex;
-    padding: var(--Least-padding);
-    justify-content: space-between;
-}
-
-.CheckOut_main{
-    display: flex;
-    width: var(--Average-width-percent);
-    flex-direction: column;
-    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: var(--Bottom-Margin);
+  }
+  .CheckOut-Main{
+    width : 100%;
+    min-height: 100vh;
+    display: grid; 
+     align-items: flex-end;  
+    background-color: var(--background-gray);
+    color: var(--black);
+    row-gap: var(--Row-gap);
     padding: var(--Next-L-padding);
     box-shadow: var(--drop-box-shadow);
-    row-gap: var(--Row-gap);
-}
-.inner_CheckOut_box{
-    margin-left: var(--Least-margin);
-}
-.small_button{
+  }
+  .Box-Wrapper{
+    display: flex;
+    min-width: var(--Min-Width); 
+    flex-direction: column; 
+    background-color: var(--bg-white); 
+    margin: 0 auto; 
+    box-shadow: var(--Customized-outline);
+  }
+  .Inside-Box{
+    display: flex; 
+    flex-direction: column;
+     padding: var(--Least-padding); 
+     padding-bottom: var(--padding-Bottom);
+     margin-bottom: var(--Bottom-Margin);
+  }
+  .Inner-Inside-Box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .LargeButtonDiv{
+    display: grid;
+    justify-content: center;
+    margin-top: var(--Least-margin);
+  }
+  .Image{
+    margin-right: 1.2rem;
+    min-width: 28px;
+  }
+  .smallButton{
     display: grid;
     height: var(--medium-btn-height);
     width: var(--medium-btm-width);
@@ -49,26 +80,17 @@ body{
     background-color: var(--bg-white) ;
     border-radius: var(--btn-border-radius);
     place-content: center center;
-}
-.CheckOut_box_Inactive{
-    display: flex;
-    flex-direction: column; 
-}
-.large_button{
-    width: var(--Button-width);
-    height: var(--large-btn-height);
-    padding: var(----login-large-btn-padding);
-    background-color: var(--purple);
-    font-size: var(--button-font-size);
-    color: var(--bg-white);
-    font-weight: var(--font-bold);
-    border-radius: var(--btn-border-radius);
-
-}
-.UpiBox{
-    display: grid;
-    padding: var(--Next-L-padding);
-    margin: 0 auto;
-    box-shadow: var(--drop-box-shadow);
-    background-color: var(--bg-white);
-}
+  }
+  .large_Button{
+      display: grid;
+      place-content: center center;
+      width: var(--Button-width);
+      height: var(--large-btn-height);
+      padding: var(--Violet-padding);
+      background-color: var(--purple);
+      font-size: var(--button-font-size);
+      color: var(--bg-white);
+      font-weight: var(--font-bold);
+      border-radius: var(--btn-border-radius);
+  }
+  

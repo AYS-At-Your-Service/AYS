@@ -1,107 +1,114 @@
 import React from "react";
 import Image from "../assets/location.webp"
-import Slot from "../assets/slot.webp"
+import SlotImage from "../assets/slot.webp"
 import paymentImage from "../assets/payment.webp"
-import {useState} from "react"
+import { PhoneFunction } from "../States/state.js"; 
+import { AddressFunction } from "../States/state.js";
+import { SlotFunction } from "../States/state.js";
 import { useNavigate } from "react-router-dom";
 
 
-export function CheckOut({amount}){
-    const [number, setNumber] = useState()
-    const [address, setaddress] = useState(null)
-    const [slot, setslot] = useState(null)
+export function CheckOut(){
+    const {phone} = PhoneFunction(999999999)
+    const {address} = AddressFunction('si')
+    const {slot} = SlotFunction('ti')
+    
     const navigate = useNavigate()
-
-    let AddressClass = address ? 'CheckOut_box' : 'CheckOut_box_Inactive'
-    let slotClass = address ? 'CheckOut_box' : 'CheckOut_box_Inactive'
-
+    
     function handleProceed(){
         navigate("/payment")
     }
 
     return(
-        <div className = "CheckOut">
-            <div className="CheckOut_Header">
-                <h1>Checkout</h1>
+        <div  className = "CheckOut-Main">
+    <div className='CheckOut_Header'>
+          <h1>Checkout</h1>
+    </div>
+      <div className='Box-Wrapper'>
+        <div className = "Inside-Box">
+          <div style={{display: "flex", justifyContent: "space-between"}}>
+            <div style={{display: "flex"}}>
+                <img src = {Image} className="Image"></img>
+                <div>
+                  <h4>Send Booking Details</h4>
+                  <p>91 <span>{phone}</span></p>
+                </div> 
             </div>
-            <div className="CheckOut_main">
-                <div className= "CheckOut_box">
-                    <div style={{display: "flex"}}>
-                        <div className="inner_CheckOut_box">
-                            <img src = {Image}></img>
-                        </div>
-                        <div className="inner_CheckOut_box">
-                            <h3>Send Booking Details</h3>
-                            <p>+91<span> </span>{number}</p>
-                        </div>
-                    </div>
-                </div>
-                <div className= {AddressClass}>
-                        <div style={{display: "flex"}}>
-                            <div className="inner_CheckOut_box">
-                                <img src = {Image}></img>
-                            </div>
-                            <div className="inner_CheckOut_box">
-                                <h3>Address</h3>
-                                {
-                                    address && (
-                                        <p>{address}</p>
-                                    )
-                                }
-                                
-                            </div>
-                        
-                        </div>
-                        <div>
-                            {
-                                address && (
-                                    <button className="small_button" >Edit</button>
-                                )
-                            }
-                            
-                        </div>
-                    
-                        { !address && (
-                                    <button className="large_button" style={{margin: "0 auto"}}>Set Address</button>
-                            )}
+            <div>
 
-                    
-
-                        
-                </div>
-                <div className= {slotClass}>
-                    <div style={{display: "flex"}}>
-                        <div className="inner_CheckOut_box">
-                            <img src = {Slot}></img>
-                        </div>
-                        <div className="inner_CheckOut_box">
-                            <h3>Slot</h3>
-                            {slot && ( <p>{slot}</p> )}
-                        </div>
-                    </div>
-                    <div>
-                        {
-                            slot && <button className="small_button">Edit</button>
-                        }
-                    </div> 
-                    { !slot && <button className="large_button" style={{margin: "0 auto"}}>Set Slot</button>}
-                </div>
-                <div className= 'CheckOut_box_Inactive'>
-                    <div style={{display: "flex"}} >
-                        <div>
-                            <img src={paymentImage}></img>
-                        </div>
-                        <div>
-                            <h3>  Payment </h3>
-                           
-                        </div>
-                    </div> 
-                    {
-                        (slot && address) && (<div style={{display: "grid", justifyContent: "center"}}><button className="large_button"  onClick={handleProceed}> Pay {amount} </button></div>)
-                    } 
-                </div>
             </div>
+          </div>
+          <div>
+
+          </div>
         </div>
+        
+        <div className='Inside-Box'>
+          <div  className='Inner-Inside-Box'>
+            <div style={{display: "flex"}}>
+                <img src = {Image} className="Image"></img>
+                <div>
+                  <h4>Address</h4>
+                  <p></p>
+                </div> 
+            </div>
+            <div>
+                {address && <button className='smallButton'><b>Edit</b></button>}
+            </div>
+          </div>
+          <div className='LargeButtonDiv'>
+            {
+              (!address && <button className='large_Button'>Set a Address</button>)
+            }
+            
+          </div>
+        </div>
+        
+      
+        <div className='Inside-Box'>
+          <div className='Inner-Inside-Box'>
+            <div style={{display: "flex"}}>
+                <img src = {SlotImage} className="Image"></img>
+                <div>
+                  <h4>Slot</h4>
+                  <p></p>
+                </div> 
+            </div>
+            <div>
+              {slot && <button className='smallButton'><b>Edit</b></button>}
+            </div>
+          </div>
+          <div className='LargeButtonDiv'>
+            {
+              (!slot && <button className='large_Button'>Set a Slot</button>)
+            }
+            
+          </div>
+        </div>
+        <div className='Inside-Box'>
+          <div className='Inner-Inside-Box'>
+            <div style={{display: "flex"}}>
+                <img src = {paymentImage} className="Image"></img>
+                <div>
+                  <h4>Payment</h4>
+                </div> 
+            </div>
+            <div>
+                
+            </div>
+          </div>
+          <div className="LargeButtonDiv">
+            {
+              (slot && address && <button className='large_Button' onClick={handleProceed}>Payment</button>)
+            }
+            
+          </div>
+        </div>
+        
+
+      </div>
+
+   </div>
     )
 }
 
