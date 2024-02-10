@@ -33,3 +33,6 @@
       font-weight: var(--font-bold);
       border-radius: var(--btn-border-radius);
 }
+.ImageDivStyle{
+    display: flex;
+}

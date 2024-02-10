@@ -32,6 +32,7 @@ export function CheckOut(){
     let ImageStyles    = classNames(InnerDivstyles['Image'])
     let smallButtonStyles=classNames(InnerDivstyles['smallButton'])
     let largeButtonStyles=classNames(InnerDivstyles['large_Button'])
+    let ImageDivStyles   = classNames(InnerDivstyles['ImageDivStyle'])
 
 
     const navigate = useNavigate()
@@ -48,7 +49,7 @@ export function CheckOut(){
       <div className={boxStyles}>
         <div className = {outerdivStyles}>
           <div className={innerdivflex}>
-            <div style={{display: "flex"}}>
+            <div className= {ImageDivStyles}>
                 <img src = {Image} className= {ImageStyles}></img>
                 <div>
                   <h4>{consts.BookingDetails}</h4>
@@ -66,7 +67,7 @@ export function CheckOut(){
         
         <div className={outerdivStyles} >
           <div className= {innerdivflex}>
-            <div style={{display: "flex"}}>
+            <div className={ImageDivStyles}>
                 <img src = {Image} className= {ImageStyles}></img>
                 <div>
                   <h4>{consts.Address}</h4>
@@ -88,7 +89,7 @@ export function CheckOut(){
       
         <div className= {outerdivStyles}>
           <div className= {innerdivflex}>
-            <div style={{display: "flex"}}>
+            <div className={ImageDivStyles}>
                 <img src = {SlotImage} className= {ImageStyles}></img>
                 <div>
                   <h4>{consts.Slot}</h4>
@@ -108,10 +109,10 @@ export function CheckOut(){
         </div>
         <div className={outerdivStyles}>
           <div className={innerdivflex}>
-            <div style={{display: "flex"}}>
+            <div className={ImageDivStyles}>
                 <img src = {paymentImage} className= {ImageStyles}></img>
                 <div>
-                  <h4>Payment</h4>
+                  <h4>{consts.Payment}</h4>
                 </div> 
             </div>
             <div>
