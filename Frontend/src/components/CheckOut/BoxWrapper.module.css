@@ -1,0 +1,9 @@
+.Box-Wrapper{
+    display: flex;
+    width: var(--Min-Width); 
+    flex-direction: column; 
+    background-color: var(--bg-white); 
+    margin: 0 auto; 
+    margin-top: var(--Next-least-margin);
+    box-shadow: var(--Customized-outline);
+  }

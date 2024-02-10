@@ -1,5 +1,5 @@
 import './App.css'
-import { CheckOut } from './Payment/Checkout'
+import { CheckOut } from './components/CheckOut/Checkout'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 function App() {
 

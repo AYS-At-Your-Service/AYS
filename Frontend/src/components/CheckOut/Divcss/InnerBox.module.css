@@ -1,0 +1,35 @@
+.Inner-Inside-Box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .LargeButtonDiv{
+    display: grid;
+    justify-content: center;
+    margin-top: var(--Least-margin);
+  }
+  .Image{
+    margin-right: var(--Image-Margin);
+    min-width: var(--Image-width);
+  }
+  .smallButton{
+    display: grid;
+    height: var(--medium-btn-height);
+    width: var(--medium-btm-width);
+    font-size: var(--button-font-size);
+    padding: var(--small-medium-btn-padding);
+    background-color: var(--bg-white) ;
+    border-radius: var(--btn-border-radius);
+    place-content: center center;
+  }
+  .large_Button{
+      display: grid;
+      place-content: center center;
+      width: var(--Button-width);
+      height: var(--large-btn-height);
+      padding: var(--Violet-padding);
+      background-color: var(--purple);
+      font-size: var(--button-font-size);
+      color: var(--bg-white);
+      font-weight: var(--font-bold);
+      border-radius: var(--btn-border-radius);
+}
