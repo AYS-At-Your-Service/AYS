@@ -7,6 +7,7 @@ import InnerDivstyles from "../CheckOut/Divcss/InnerBox.module.css"
 import OuterDivStyles from "../CheckOut/Divcss/InsideBox.module.css"
 import BoxStyles from "../CheckOut/BoxWrapper.module.css"
 import CheckoutMainStyles from "../../components/CheckOut/CheckoutMain.module.css"
+import {LandLine} from "../CheckOut/constants/constant.js"
 import HeaderStyles from "../CheckOut/CheckOutHeader.module.css"
 import { PhoneFunction } from "../../States/state.js"; 
 import { AddressFunction } from "../../States/state.js";
@@ -51,7 +52,7 @@ export function CheckOut(){
                 <img src = {Image} className= {ImageStyles}></img>
                 <div>
                   <h4>Send Booking Details</h4>
-                  <p>+91 <span>{phone}</span></p>
+                  <p>{LandLine}<span>{phone}</span></p>
                 </div> 
             </div>
             <div>
