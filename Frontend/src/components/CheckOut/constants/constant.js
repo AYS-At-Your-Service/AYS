@@ -1,1 +1,9 @@
 export const LandLine = 91
+export const Payment = "Payment"
+export const SetSlot = "Set a Slot"
+export const SetAddress = "Set an Address"
+export const edit = "Edit"
+export const BookingDetails = "Send Booking Details"
+export const Address = "Address"
+export const CheckOutHeader = "CheckOut"
+export const Slot = "Slot"

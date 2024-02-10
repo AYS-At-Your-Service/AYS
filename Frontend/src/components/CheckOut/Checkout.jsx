@@ -7,7 +7,7 @@ import InnerDivstyles from "../CheckOut/Divcss/InnerBox.module.css"
 import OuterDivStyles from "../CheckOut/Divcss/InsideBox.module.css"
 import BoxStyles from "../CheckOut/BoxWrapper.module.css"
 import CheckoutMainStyles from "../../components/CheckOut/CheckoutMain.module.css"
-import {LandLine} from "../CheckOut/constants/constant.js"
+import * as consts from "../CheckOut/constants/constant.js"
 import HeaderStyles from "../CheckOut/CheckOutHeader.module.css"
 import { PhoneFunction } from "../../States/state.js"; 
 import { AddressFunction } from "../../States/state.js";
@@ -43,7 +43,7 @@ export function CheckOut(){
     return(
     <div  className = {MainDivStyles}>
     <div className={headerStyles}>
-          <h1>Checkout</h1>
+          <h1>{consts.CheckOutHeader}</h1>
     </div>
       <div className={boxStyles}>
         <div className = {outerdivStyles}>
@@ -51,8 +51,8 @@ export function CheckOut(){
             <div style={{display: "flex"}}>
                 <img src = {Image} className= {ImageStyles}></img>
                 <div>
-                  <h4>Send Booking Details</h4>
-                  <p>{LandLine}<span>{phone}</span></p>
+                  <h4>{consts.BookingDetails}</h4>
+                  <p>{consts.LandLine}<span>{phone}</span></p>
                 </div> 
             </div>
             <div>
@@ -69,17 +69,17 @@ export function CheckOut(){
             <div style={{display: "flex"}}>
                 <img src = {Image} className= {ImageStyles}></img>
                 <div>
-                  <h4>Address</h4>
+                  <h4>{consts.Address}</h4>
                   <p>{address}</p>
                 </div> 
             </div>
             <div>
-                {address && <button className= {smallButtonStyles}><b>Edit</b></button>}
+                {address && <button className= {smallButtonStyles}><b>{consts.edit}</b></button>}
             </div>
           </div>
           <div className= {largeButtondiv}>
             {
-              (!address && <button className= {largeButtonStyles}>Set a Address</button>)
+              (!address && <button className= {largeButtonStyles}>{consts.SetAddress}</button>)
             }
             
           </div>
@@ -91,17 +91,17 @@ export function CheckOut(){
             <div style={{display: "flex"}}>
                 <img src = {SlotImage} className= {ImageStyles}></img>
                 <div>
-                  <h4>Slot</h4>
+                  <h4>{consts.Slot}</h4>
                   <p>{slot}</p>
                 </div> 
             </div>
             <div>
-              {slot && <button className= {smallButtonStyles}><b>Edit</b></button>}
+              {slot && <button className= {smallButtonStyles}><b>{consts.edit}</b></button>}
             </div>
           </div>
           <div className= {largeButtondiv}>
             {
-              (!slot && <button className= {largeButtonStyles}>Set a Slot</button>)
+              (!slot && <button className= {largeButtonStyles}>{consts.SetSlot}</button>)
             }
             
           </div>
@@ -120,7 +120,7 @@ export function CheckOut(){
           </div>
           <div className= {largeButtondiv}>
             {
-              (slot && address && <button className= {largeButtonStyles} onClick={handleProceed}>Payment</button>)
+              (slot && address && <button className= {largeButtonStyles} onClick={handleProceed}>{consts.Payment}</button>)
             }
             
           </div>
