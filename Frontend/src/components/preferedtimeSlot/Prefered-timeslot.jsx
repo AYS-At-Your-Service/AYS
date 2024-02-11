@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
-import { DEFAULTCONTENTOFH3,DEFAULTCONTENTOFH32,DEFAULTCONTENTOFP,DEFAULTBUTTON } from './prefered-timeslot.consts';
-import './timeslot.module.css';
+import { DEFAULTCONTENTOFH3, DEFAULTCONTENTOFH32, DEFAULTCONTENTOFP, DEFAULTBUTTON } from './prefered-timeslot.consts';
+import timeSlotStyles from './timeslot.module.css'; // Import the CSS module
 
 const PreferedTimeSlot = ({ onClose, onProceed }) => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -25,7 +24,7 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
 
   const handleDateClick = (date) => {
     setSelectedDate(date);
-    setSelectedTimeSlot(null); 
+    setSelectedTimeSlot(null);
   };
 
   const handleTimeSlotClick = (timeSlot) => {
@@ -33,40 +32,41 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
   };
 
   const handleProceedClick = () => {
-    onProceed(selectedDate, selectedTimeSlot); //This will return the selected date and time slot
+    onProceed(selectedDate, selectedTimeSlot); // This will return the selected date and time slot
     onClose();
   };
 
   return (
-    <div className="modal-container">
-      <div className="modal">
-        <div className="modal-cross-outer">
-          <div className="modal-cross" onClick={onClose}>
+    <div className={timeSlotStyles['modal-container']}>
+      <div className={timeSlotStyles['modal']}>
+        <div className={timeSlotStyles['modal-cross-outer']}>
+          <div className={timeSlotStyles['modal-cross']} onClick={onClose}>
             X
           </div>
         </div>
-        <div className="content-container">
+        <div className={timeSlotStyles['content-container']}>
           <div>
             <h3>{DEFAULTCONTENTOFH3}</h3>
             <p>{DEFAULTCONTENTOFP}</p>
           </div>
-         
+
           {/* Date Section */}
-          <div className="date-section">
+          <div className={timeSlotStyles['date-section']}>
             {dates.map((date, index) => (
               <button
                 key={index}
                 onClick={() => handleDateClick(date)}
-                className={`date-button ${selectedDate === date ? 'selected' : ''}`}
-              >       {date.toLocaleDateString('en-US', { weekday: 'short' })}
-                   <br />
+                className={`${timeSlotStyles['date-button']} ${selectedDate === date ? timeSlotStyles['selected'] : ''}`}
+              >
+                {date.toLocaleDateString('en-US', { weekday: 'short' })}
+                <br />
                 {date.getDate()}
               </button>
             ))}
           </div>
           <h3>{DEFAULTCONTENTOFH32}</h3>
           {/* Time section */}
-          <div className="time-section">
+          <div className={timeSlotStyles['time-section']}>
             {Array.from({ length: 26 }).map((_, index) => {
               const hours = Math.floor(index / 2) + 7;
               const minutes = index % 2 === 0 ? '00' : '30';
@@ -76,7 +76,7 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
                   key={index}
                   onClick={() => handleTimeSlotClick(time)}
                   disabled={!selectedDate}
-                  className={`time-button ${selectedTimeSlot === time ? 'selected' : ''}`}
+                  className={`${timeSlotStyles['time-button']} ${selectedTimeSlot === time ? timeSlotStyles['selected'] : ''}`}
                 >
                   {time}
                 </button>
@@ -85,7 +85,7 @@ const PreferedTimeSlot = ({ onClose, onProceed }) => {
           </div>
         </div>
         {/* Proceed Button */}
-        <button className="proceed-button" onClick={handleProceedClick} disabled={!selectedTimeSlot} >
+        <button className={timeSlotStyles['proceed-button']} onClick={handleProceedClick} disabled={!selectedTimeSlot}>
           {DEFAULTBUTTON}
         </button>
       </div>
