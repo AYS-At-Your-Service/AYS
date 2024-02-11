@@ -1,10 +1,11 @@
 import './App.css'
-
+import FilterComponent from './components/filterAndSearchVendor/filterComponent'
 function App() {
 
   return (
     <>
-      <h1>AYS</h1>
+      <FilterComponent />
+      {/* <h1>AYS</h1> */}
     </>
   )
 }
