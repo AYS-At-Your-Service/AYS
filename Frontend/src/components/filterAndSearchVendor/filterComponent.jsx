@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Navigation from "./Navigation/Nav";
-import Products from "./Products/Products";
+import Products from "./Products/Products";// 
 import products from "./db/newdata";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
@@ -167,7 +167,7 @@ const FilterComponent = () => {
     );
   }
 
-  const result = filteredData(
+  const result = filteredData(   //contains the cards for the vendors
     products,
     selectedCategory,
     query,
