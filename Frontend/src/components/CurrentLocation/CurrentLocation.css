@@ -1,0 +1,14 @@
+.current-location-container{
+    display: flex;
+    padding: var(--search-container-padding);
+    gap:var(--search-container-gap);
+    align-items: center;
+    cursor: pointer;
+}
+.current-location-container .image{
+    width:var(--search-image-size);
+}
+.current-location-container .text{
+    font-family: var(--font-family);
+    color: blue;
+}

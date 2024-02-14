@@ -1,0 +1,14 @@
+.dropdown{
+    align-items: center;
+    margin-top: var(--dropdown-top-margin);
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 2;
+    position: sticky;
+}
+
+.dropdown > div{
+    width: 100%;
+}

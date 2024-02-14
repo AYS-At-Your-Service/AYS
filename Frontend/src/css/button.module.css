@@ -1,20 +1,19 @@
 .btn{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: var(--button-font-size);
     text-align: center;
-    text-decoration: none;
+    padding: var(--btn-basic-padding);
+    margin-right: var(--btn-basic-margin);
+    margin-bottom: var(--btn-basic-margin);
+    align-items: center;
     cursor: pointer;
     border-radius: var(--btn-border-radius);
+    vertical-align: middle;
 }
-
 
 .login-btn {
     font-weight: var(--font-normal);
     display: inline-block;
     padding: var(--login-large-btn-padding);
-    font-size: var(--button-font-size);
     border: var(--btn-border) solid var(--outline-grey);
     color: var(--text-grey);
     background-color: var(--bg-white);
@@ -43,7 +42,6 @@
 }
 
 .medium-btn{
-    width: var(--medium-btn-width);
     height: var(--medium-btn-height);
     font-weight: var(--font-normal);
     padding: var(small-medium-btn-padding);
@@ -54,7 +52,6 @@
 }
 
 .small-btn{
-    width: var(--small-btn-width);
     height: var(--small-btn-height);
     font-weight: var(--font-bold);
     padding: var(--small-medium-btn-padding);
@@ -63,6 +60,13 @@
     background-color: var(--bg-white);
 }
 
+.small-btn-non-bold{
+    color: var(--btn-smallbtn-non-bold-color);
+    height: var(--small-btn-height);
+    border: var(--btn-border) solid var(--outline-grey);
+    background-color: var(--bg-white);
+    font-size: var(--btn-smallbtn-non-bold-size);
+}
 
 
 
