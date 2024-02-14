@@ -1,9 +1,9 @@
 import React from 'react';
-import './../../../css/button.module.css';
+import btnStyles from './../../../css/button.module.css';
 
 const Button = ({ onClickHandler, value, title }) => {
   return (
-    <button onClick={onClickHandler} value={value} className="btn">
+    <button onClick={onClickHandler} value={value} className={btnStyles['large-btn:hover']}>
       {title}
     </button>
   );

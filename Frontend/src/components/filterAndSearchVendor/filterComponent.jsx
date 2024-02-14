@@ -5,7 +5,6 @@ import Products from "./Products/Products";//
 import products from "../../services/VendorInfo.js";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
-
 import Card from './cardAndButton/Card.jsx';
 
 const FilterComponent = () => {
