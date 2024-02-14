@@ -1,7 +1,7 @@
-// Nav.jsx
-import React from 'react';
-import './Nav.css';
 
+import React from 'react';
+
+import './searchAndSort.css';
 const Nav = ({ handleInputChange, handleSortChange, query }) => {
   return (
     <nav>

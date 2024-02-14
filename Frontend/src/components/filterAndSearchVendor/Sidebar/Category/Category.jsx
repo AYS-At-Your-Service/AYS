@@ -1,12 +1,11 @@
 import InputRadioBoxcategory from "./../../inputRadioBoxes/InputRadioBoxcategory.jsx";
 
-import './../../../../css/Text.css';
+import './../../../../css/text.module.css';
 
 function Category({ handleChangecategory }) {
   return (
     <div>
-      <h2 className="base-text">Choose the service </h2>
-
+      <h4 className="base-text" style={{padding:"10px"}}>Choose the service</h4>
       <div>
         <label className="sidebar-label-container">
           <input onChange={handleChangecategory} type="radio" value="" name="category" />

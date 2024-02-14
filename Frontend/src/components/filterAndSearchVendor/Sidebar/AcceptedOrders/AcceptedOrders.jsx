@@ -1,12 +1,12 @@
 // AcceptedOrders.jsx
 
-import './../../../../css/Text.css';
+import './../../../../css/text.module.css';
 import InputRadioBoxAcceptedOrder from './../../inputRadioBoxes/InputRadioBoxAcceptedOrder.jsx';
 const AcceptedOrders = ({ handleChangeAcceptedOrder }) => {
   return (
     <>
       <div>
-        <h4 className="base-text">Number of Accepted Orders</h4>
+        <h4 className="base-text" style={{padding:"10px"}}>Number of Accepted Orders</h4>
         <label className="sidebar-label-container">
           <input onChange={handleChangeAcceptedOrder} type="radio" value="" name="acceptedOrders" />
           <span className="checkmark"></span>All

@@ -1,15 +1,4 @@
-/* Apply a CSS reset to ensure consistent styling across browsers */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: 'Arial', sans-serif; /* Choose an appropriate font */
-}
-
-/* General styles for the sidebar */
 .sidebar {
   width: 15%;
   position: fixed;
@@ -19,17 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: auto; /* Enable vertical scrolling */
-  padding: 20px; /* Optional: Add some padding for better aesthetics */
-}
-
-/* Styles for the logo container */
-.logo-container {
-  margin-bottom: 2rem; /* Adjusted for better spacing */
-}
-
-.logo-container h1 {
-  margin-top: 1rem; /* Adjusted for better spacing */
+  overflow-y: auto; 
+  padding: 20px; 
 }
 
 /* Responsive styles using media queries */
@@ -39,20 +19,18 @@ body {
     position: static;
     height: auto;
     border-right: none;
+    overflow-y: hidden; 
   }
 
   .logo-container {
-    margin-bottom: 1rem; /* Adjusted for better spacing */
+    margin-bottom: 1rem; 
   }
 
   .logo-container h1 {
-    margin-top: 0.5rem; /* Adjusted for better spacing */
+    margin-top: 0.5rem; 
   }
 }
 
-/* Sidebar.css */
-
-/* Import any external fonts or reset styles if needed */
 
 .sidebar-label-container {
   display: block;
@@ -60,8 +38,8 @@ body {
   cursor: pointer;
   position: relative;
   padding-left: 35px;
-  font-size: 15px; /* Adjust font size as needed */
-  color: #333; /* Adjust text color as needed */
+  font-size: 15px; 
+  color: #333; 
 }
 
 .sidebar-label-container input {
@@ -74,31 +52,24 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px; /* Adjust the height of the checkbox */
-  width: 20px; /* Adjust the width of the checkbox */
-  background-color: #fff; /* Default background color */
-  border: 2px solid #e5e5e5; /* Border color for checkbox */
-  border-radius: 3px; /* Adjust border-radius for rounded corners */
+  height: 20px; 
+  width: 20px; 
+  background-color: #fff; 
+  border: 2px solid #e5e5e5; 
+  border-radius: 3px; 
 }
 
-/* Style the custom checkbox when checked */
-.sidebar-label-container input:checked ~ .checkmark {
-  background-color: #4CAF50; /* Change background color when checked */
-  border: 2px solid #4CAF50; /* Change border color when checked */
-}
-
-/* Optional: Style the text next to the checkbox */
 .sidebar-label-container input:checked ~ .checkmark::after {
   content: '';
   position: absolute;
   display: block;
-  left: 7px; /* Adjust the position of the checkmark inside the checkbox */
-  top: 3px; /* Adjust the position of the checkmark inside the checkbox */
-  width: 6px; /* Adjust the width of the checkmark */
-  height: 12px; /* Adjust the height of the checkmark */
-  border: solid #fff; /* Checkmark color */
+  left: 7px; 
+  top: 3px; 
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
   border-width: 0 2px 2px 0;
-  transform: rotate(45deg); /* Rotate the checkmark to create an 'X' */
+  transform: rotate(45deg);
 }
 
-/* Responsive styles can be added here as needed */
+

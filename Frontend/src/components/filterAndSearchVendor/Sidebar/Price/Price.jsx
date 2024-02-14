@@ -1,12 +1,11 @@
 import InputRadioBoxPrice from "./../../inputRadioBoxes/InputRadioboxPrice";
 
-import './../../../../css/Text.css';
+import './../../../../css/text.module.css';
 const Price = ({ handleChangePrice }) => {
   return (
     <>
       <div>
-        <h2 className="base-text">Hourly price Range</h2>
-
+        <h4 className="base-text" style={{padding:"10px"}}>Hourly price Range</h4>
         <div>
           <label className="sidebar-label-container">
             <input onChange={handleChangePrice} type="radio" value="" name="price" />

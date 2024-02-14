@@ -1,13 +1,12 @@
 // Experience.jsx
 import InputRadioBoxExperience from "./../../inputRadioBoxes/InputRadioBoxExperience";
-import './../../../../css/Text.css';
+import './../../../../css/text.module.css';
 
 const Experience = ({ handleChangeExperience }) => {
   return (
     <>
       <div>
-        <h2 className="base-text">Years of Experience</h2>
-
+        <h4 className="base-text" style={{padding:"10px"}}>Years of Experience</h4>
         <div>
         <label className="sidebar-label-container">
           <input onChange={handleChangeExperience} type="radio" value="" name="experience" />

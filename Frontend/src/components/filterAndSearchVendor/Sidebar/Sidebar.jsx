@@ -12,9 +12,6 @@ const Sidebar = ({ handleChangecategory, handleChangePrice, handleChangeAccepted
   return (
     <>
       <section className="sidebar">
-        <div className="logo-container">
-          <h2>AYS</h2>
-        </div>
         <Category handleChangecategory={handleChangecategory} />
         <Price handleChangePrice={handleChangePrice} />
         <Experience handleChangeExperience={handleChangeExperience} />

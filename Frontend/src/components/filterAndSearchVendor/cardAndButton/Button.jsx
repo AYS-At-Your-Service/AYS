@@ -1,5 +1,5 @@
 import React from 'react';
-import './../../../css/button.css';
+import './../../../css/button.module.css';
 
 const Button = ({ onClickHandler, value, title }) => {
   return (

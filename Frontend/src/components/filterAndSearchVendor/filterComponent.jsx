@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import Navigation from "./Navigation/Nav";
+import Navigation from "./SearchAndSort/searchAndSort";
 import Products from "./Products/Products";// 
-import products from "./db/newdata";
+import products from "../../services/VendorInfo.js";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 
@@ -180,18 +180,25 @@ const FilterComponent = () => {
 
   return (
     <>
-      <Sidebar
-        handleChangecategory={handleChangecategory}
-        handleChangePrice={handleChangePrice}
-        handleChangeAcceptedOrder={handleChangeAcceptedOrder}
-        handleChangeExperience={handleChangeExperience}
-        handleChangeRatings={handleChangeRatings}
-      />
+      
       <Navigation query={query} handleInputChange={handleInputChange} handleSortChange={handleSortChange} />
-      <Recommended handleClick={handleClick} />
-      <Products result={result} />
+      <div style={{ display: 'flex', height: '100vh' }}>
+      <Sidebar
+          handleChangecategory={handleChangecategory}
+          handleChangePrice={handleChangePrice}
+          handleChangeAcceptedOrder={handleChangeAcceptedOrder}
+          handleChangeExperience={handleChangeExperience}
+          handleChangeRatings={handleChangeRatings}
+        />
+        <div>
+          
+          <Recommended handleClick={handleClick} />
+          <Products result={result} />
+        </div>
+      </div>
     </>
   );
+  
 };
 
 export default FilterComponent;

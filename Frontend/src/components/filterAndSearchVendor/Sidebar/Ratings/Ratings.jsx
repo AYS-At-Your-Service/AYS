@@ -1,12 +1,12 @@
 // Ratings.jsx
 import InputRadioBoxRatings from "./../../inputRadioBoxes/InputRadioBoxRating";
 
-import './../../../../css/Text.css';
+import './../../../../css/text.module.css';
 const Ratings = ({ handleChangeRatings }) => {
   return (
     <>
       <div>
-        <h2 className="base-text">Ratings Of the service</h2>
+        <h4 className="base-text" style={{padding:"10px"}}>Ratings Of the service</h4>
         <label className="sidebar-label-container">
           <input onChange={handleChangeRatings} type="radio" value="" name="ratings" />
           <span className="checkmark"></span>All

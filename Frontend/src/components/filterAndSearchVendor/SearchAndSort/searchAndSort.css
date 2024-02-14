@@ -1,14 +1,19 @@
-/* Nav.css */
+/* searchAndInput.css */
 
 nav {
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .search-box-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
+
+  width: 100%;
 }
 
 .search-input {
@@ -17,7 +22,7 @@ nav {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-right: 10px;
-  text-align: center; /* Center text inside input */
+  text-align: center;
 }
 
 .sort-dropdown {
@@ -27,7 +32,5 @@ nav {
   border-radius: 4px;
   background-color: #fff;
   cursor: pointer;
-  text-align: center; /* Center text inside dropdown */
+  text-align: center;
 }
-
-/* Adjust the styles according to your preference */
