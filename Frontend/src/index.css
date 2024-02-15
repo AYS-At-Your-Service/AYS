@@ -9,13 +9,14 @@
   --outline-grey: rgb(117, 117, 117);
   --purple: rgba(110, 66, 229, 1);
   --bg-white: rgb(255, 255, 255);
-  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serisf;
   --font-normal: 400;
   --font-bold: 700;
-  --base-font-size: 20px;
+  --checkout-base-font-size: 20px;
   --title-font-size: 36px;
   --subtitle-font-size: 28px;
-  --button-font-size: 18px;
+  --button-font-size: 14px;
+  --checkout-button-font-size: 18px;
   --description-font-size: 12px;
 
   --medium-btn-bg-purple: rgba(110, 66, 229, 0.1);
@@ -23,7 +24,8 @@
   --login-large-btn-padding: 13px 30px;
   --small-medium-btn-padding: 13px 20px;
   --medium-btn-height: 32px;
-  --medium-btn-width: 60px;
+  --medium-btn-width: 80px;
+  --checkout-medium-btn-width: 60px;
   --small-btn-height: 32px;
   --small-btn-width: 52px;
   --large-btn-height: 48px;
