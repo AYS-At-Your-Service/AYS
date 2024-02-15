@@ -44,7 +44,7 @@ export function CheckOut(){
     return(
     <div  className = {MainDivStyles}>
     <div className={headerStyles}>
-          <h1>{consts.CheckOutHeader}</h1>
+          <h1>{consts.CHECKOUTHEADER}</h1>
     </div>
       <div className={boxStyles}>
         <div className = {outerdivStyles}>
@@ -52,8 +52,8 @@ export function CheckOut(){
             <div className= {ImageDivStyles}>
                 <img src = {Image} className= {ImageStyles}></img>
                 <div>
-                  <h4>{consts.BookingDetails}</h4>
-                  <p>{consts.LandLine}<span>{phone}</span></p>
+                  <h4>{consts.BOOKINGDETAILS}</h4>
+                  <p>{consts.LANDLINE}<span>{phone}</span></p>
                 </div> 
             </div>
             <div>
@@ -70,17 +70,17 @@ export function CheckOut(){
             <div className={ImageDivStyles}>
                 <img src = {Image} className= {ImageStyles}></img>
                 <div>
-                  <h4>{consts.Address}</h4>
+                  <h4>{consts.ADDRESS}</h4>
                   <p>{address}</p>
                 </div> 
             </div>
             <div>
-                {address && <button className= {smallButtonStyles}><b>{consts.edit}</b></button>}
+                {address && <button className= {smallButtonStyles}><b>{consts.EDIT}</b></button>}
             </div>
           </div>
           <div className= {largeButtondiv}>
             {
-              (!address && <button className= {largeButtonStyles}>{consts.SetAddress}</button>)
+              (!address && <button className= {largeButtonStyles}>{consts.SETADDRESS}</button>)
             }
             
           </div>
@@ -92,17 +92,17 @@ export function CheckOut(){
             <div className={ImageDivStyles}>
                 <img src = {SlotImage} className= {ImageStyles}></img>
                 <div>
-                  <h4>{consts.Slot}</h4>
+                  <h4>{consts.SLOT}</h4>
                   <p>{slot}</p>
                 </div> 
             </div>
             <div>
-              {slot && <button className= {smallButtonStyles}><b>{consts.edit}</b></button>}
+              {slot && <button className= {smallButtonStyles}><b>{consts.EDIT}</b></button>}
             </div>
           </div>
           <div className= {largeButtondiv}>
             {
-              (!slot && <button className= {largeButtonStyles}>{consts.SetSlot}</button>)
+              (!slot && <button className= {largeButtonStyles}>{consts.SETSLOT}</button>)
             }
             
           </div>
@@ -112,7 +112,7 @@ export function CheckOut(){
             <div className={ImageDivStyles}>
                 <img src = {paymentImage} className= {ImageStyles}></img>
                 <div>
-                  <h4>{consts.Payment}</h4>
+                  <h4>{consts.PAYMENT}</h4>
                 </div> 
             </div>
             <div>
@@ -121,7 +121,7 @@ export function CheckOut(){
           </div>
           <div className= {largeButtondiv}>
             {
-              (slot && address && <button className= {largeButtonStyles} onClick={handleProceed}>{consts.Payment}</button>)
+              (slot && address && <button className= {largeButtonStyles} onClick={handleProceed}>{consts.PAYMENT}</button>)
             }
             
           </div>
