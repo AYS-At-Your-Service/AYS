@@ -1,7 +1,7 @@
 .Inside-Box{
     display: flex; 
     flex-direction: column;
-    padding: var(--Least-padding); 
-    padding-bottom: var(--padding-Bottom);
-    margin-bottom: var(--Bottom-Margin);
+    padding: var(--checkout-Least-padding); 
+    padding-bottom: var(--checkout-padding-Bottom);
+    margin-bottom: var(--checkout-Bottom-Margin);
 }

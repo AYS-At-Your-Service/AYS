@@ -5,11 +5,11 @@
   .LargeButtonDiv{
     display: grid;
     justify-content: center;
-    margin-top: var(--Least-margin);
+    margin-top: var(--checkout-Least-margin);
   }
   .Image{
-    margin-right: var(--Image-Margin);
-    min-width: var(--Image-width);
+    margin-right: var(--checkout-Image-Margin);
+    min-width: var(--checkout-Image-width);
   }
   .smallButton{
     display: grid;
@@ -24,9 +24,9 @@
   .large_Button{
       display: grid;
       place-content: center center;
-      width: var(--Button-width);
+      width: var(--checkout-Button-width);
       height: var(--large-btn-height);
-      padding: var(--Violet-padding);
+      padding: var(--checkout-Violet-padding);
       background-color: var(--purple);
       font-size: var(--button-font-size);
       color: var(--bg-white);

@@ -54,4 +54,22 @@
   --drop-box-category-gap: 12px;
   --drop-box-category-image-size: 72px;
   --drop-box-category-image-radius: 8px;
+
+    --checkout-Least-padding: 1rem;
+    --checkout-Next-L-padding: 2rem;
+    --checkout-padding-Bottom: 0.5rem;
+    --checkout-Bottom-Margin: 1rem;
+    --checkout-Button-width: 280px;
+    --checkout-Average-width-percent: 50%;
+    --checkout-background-gray: #fdfbfbe5;
+    --checkout-Row-gap: 2rem;
+    --checkout-Image-Margin: 1.2rem;
+    --checkout-Image-width: 28px;
+    --checkout-Least-margin: 1rem;
+    --checkout-Next-least-margin: 2.5rem;
+    --checkout-MinHeight: 100vh;
+    --checkout-Customized-outline: 0px 0px 4px 6px rgba(15, 15, 15, 0.08);
+    --checkout-Customized-box:  4px 6px rgba(15, 15, 15, 0.08);
+    --checkout-Violet-padding: 18px 30px;
+    --checkout-Min-Width: 60%;
 }

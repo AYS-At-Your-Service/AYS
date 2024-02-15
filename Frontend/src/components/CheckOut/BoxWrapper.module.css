@@ -1,9 +1,21 @@
 .Box-Wrapper{
     display: flex;
-    width: var(--Min-Width); 
+    width: var(--checkout-Min-Width); 
     flex-direction: column; 
     background-color: var(--bg-white); 
     margin: 0 auto; 
-    margin-top: var(--Next-least-margin);
-    box-shadow: var(--Customized-outline);
-  }
+    margin-top: var(--checkout-Next-least-margin);
+    box-shadow: var(--checkout-Customized-outline);
+ }
+
+
+@media screen and (min-width: 1000px) {
+  .Box-Wrapper{
+     width: 550px
+ }
+} 
+@media screen and (max-width: 800px) {
+  .Box-Wrapper{
+     width: 100%;
+ }
+} 

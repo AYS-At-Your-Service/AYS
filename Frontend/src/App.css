@@ -1,32 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  :root{
-    --Least-padding: 1rem;
-    --Next-L-padding: 2rem;
-    --padding-Bottom: 0.5rem;
-    --Bottom-Margin: 1rem;
-    --Button-width: 280px;
-    --Average-width-percent: 50%;
-    --background-gray: #fdfbfbe5;
-    --Row-gap: 2rem;
-    --Image-Margin: 1.2rem;
-    --Image-width: 28px;
-    --Least-margin: 1rem;
-    --Next-least-margin: 2.5rem;
-    --MinHeight: 100vh;
-    --Customized-outline: 0px 0px 4px 6px rgba(15, 15, 15, 0.08);
-    --Customized-box:  4px 6px rgba(15, 15, 15, 0.08);
-    --Violet-padding: 18px 30px;
-    --Min-Width: 50%;
-  }
 
- @media screen and (min-width: 1000px) {
-    .Box-Wrapper{
-        width: 550px
-    }
-} 
+
+
  
   

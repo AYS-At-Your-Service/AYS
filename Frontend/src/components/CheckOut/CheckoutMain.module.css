@@ -3,9 +3,9 @@
     min-height: 100vh;
     display: grid; 
      align-items: center;  
-    background-color: var(--background-gray);
+    background-color: var(--checkout-background-gray);
     color: var(--black);
-    row-gap: var(--Row-gap);
-    padding: var(--Next-L-padding);
+    row-gap: var(--checkout-Row-gap);
+    padding: var(--checkout-Next-L-padding);
     box-shadow: var(--drop-box-shadow);
   }
