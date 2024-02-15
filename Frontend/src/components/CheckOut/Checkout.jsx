@@ -9,9 +9,9 @@ import BoxStyles from "../CheckOut/BoxWrapper.module.css"
 import CheckoutMainStyles from "../../components/CheckOut/CheckoutMain.module.css"
 import * as consts from "../CheckOut/constants/constant.js"
 import HeaderStyles from "../CheckOut/CheckOutHeader.module.css"
-import { PhoneFunction } from "../../States/state.js"; 
-import { AddressFunction } from "../../States/state.js";
-import { SlotFunction } from "../../States/state.js";
+import { PhoneFunction } from "./States/state.js"; 
+import { AddressFunction } from "./States/state.js";
+import { SlotFunction } from "./States/state.js";
 import { useNavigate } from "react-router-dom";
 import classNames from "classnames";
 
