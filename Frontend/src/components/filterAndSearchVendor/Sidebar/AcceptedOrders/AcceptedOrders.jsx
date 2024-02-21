@@ -1,59 +1,24 @@
 // AcceptedOrders.jsx
-
+import React from 'react';
 import textStyle from './../../../../css/text.module.css';
-import InputRadioBoxAcceptedOrder from './../../inputRadioBoxes/InputRadioBoxAcceptedOrder.jsx';
+import InputRadioBoxAcceptedOrder from '../../inputRadioBoxes/InputRadioBoxAcceptedOrder.jsx';
+import { ACCEPTED_ORDERS_CONSTANTS } from './AcceptedOredersConstants.js';
+
 const AcceptedOrders = ({ handleChangeAcceptedOrder }) => {
   return (
     <>
       <div>
-        <h4 className={textStyle["base-text"]} style={{padding:"10px"}}>Number of Accepted Orders</h4>
-        <label className="sidebar-label-container">
-          <input onChange={handleChangeAcceptedOrder} type="radio" value="" name="acceptedOrders" />
-          <span className="checkmark"></span>All
-        </label>
+        <h4 className={textStyle["base-text"]} style={{ padding: "10px" }}>{ACCEPTED_ORDERS_CONSTANTS.TITLE}</h4>
         <div>
-          <InputRadioBoxAcceptedOrder
-            handleChangeAcceptedOrder={handleChangeAcceptedOrder}
-            value="0-10"
-            title="0-10"
-            name="acceptedOrders"
-          />
-          <InputRadioBoxAcceptedOrder
-            handleChangeAcceptedOrder={handleChangeAcceptedOrder}
-            value="11-20"
-            title="11-20"
-            name="acceptedOrders"
-          />
-          <InputRadioBoxAcceptedOrder
-            handleChangeAcceptedOrder={handleChangeAcceptedOrder}
-            value="21-30"
-            title="21-30"
-            name="acceptedOrders"
-          />
-          <InputRadioBoxAcceptedOrder
-            handleChangeAcceptedOrder={handleChangeAcceptedOrder}
-            value="31-50"
-            title="31-50"
-            name="acceptedOrders"
-          />
-          <InputRadioBoxAcceptedOrder
-            handleChangeAcceptedOrder={handleChangeAcceptedOrder}
-            value="51-80"
-            title="51-80"
-            name="acceptedOrders"
-          />
-          <InputRadioBoxAcceptedOrder
-            handleChangeAcceptedOrder={handleChangeAcceptedOrder}
-            value="81-100"
-            title="81-100"
-            name="acceptedOrders"
-          />
-          <InputRadioBoxAcceptedOrder
-            handleChangeAcceptedOrder={handleChangeAcceptedOrder}
-            value="100+"
-            title="100+"
-            name="acceptedOrders"
-          />
+          {ACCEPTED_ORDERS_CONSTANTS.RADIO_BOXES.map((radioBox) => (
+            <InputRadioBoxAcceptedOrder
+              key={radioBox.value}
+              handleChangeAcceptedOrder={handleChangeAcceptedOrder}
+              value={radioBox.value}
+              title={radioBox.label}
+              name="acceptedOrders"
+            />
+          ))}
         </div>
       </div>
     </>

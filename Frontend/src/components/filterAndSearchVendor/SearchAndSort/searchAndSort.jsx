@@ -1,24 +1,23 @@
-
+// Nav.jsx
 import React from 'react';
+import searchCss from './searchAndSort.module.css';
+import { NAV_CONSTANTS } from './SearchConstants.js';
 
-import './searchAndSort.css';
 const Nav = ({ handleInputChange, handleSortChange, query }) => {
   return (
     <nav>
-      <div className="search-box-container">
+      <div className={searchCss["search-box-container"]}>
         <input
-          className="text search-input"
+          className={searchCss["search-input"]}
           type="text"
           onChange={handleInputChange}
           value={query}
-          placeholder="Enter the vendor to search."
+          placeholder={NAV_CONSTANTS.SEARCH_PLACEHOLDER}
         />
-        <select className="sort-dropdown" onChange={handleSortChange}>
-          <option value="priceLowToHigh">Price: Low to High</option>
-          <option value="priceHighToLow">Price: High to Low</option>
-          <option value="rating">Rating</option>
-          <option value="experience">Years of Experience</option>
-          <option value="AcceptedRequests">Accepted Requests</option>
+        <select className={searchCss["sort-dropdown"]} onChange={handleSortChange}>
+          {NAV_CONSTANTS.SORT_OPTIONS.map(option => (
+            <option key={option.value} value={option.value}>{option.label}</option>
+          ))}
         </select>
       </div>
     </nav>

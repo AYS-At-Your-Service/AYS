@@ -1,9 +1,9 @@
-import "./Product.css";
+import productCss from  "./Product.module.css";
 
 const Products = ({ result }) => {
   return (
     <>
-      <section className="card-container">{result}</section>
+      <section className={productCss["card-container"]}>{result}</section>
     </>
   );
 };

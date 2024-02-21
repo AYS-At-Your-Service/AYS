@@ -1,42 +1,24 @@
 // Ratings.jsx
+import React from 'react';
 import InputRadioBoxRatings from "./../../inputRadioBoxes/InputRadioBoxRating";
-
 import textStyle from './../../../../css/text.module.css';
+import { RATINGS_CONSTANTS } from './RatingConstant.js';
+
 const Ratings = ({ handleChangeRatings }) => {
   return (
     <>
       <div>
-
-        <h4 className={textStyle["base-text"]} style={{padding:"10px"}}>Ratings Of the service</h4>
-        <label className="sidebar-label-container">
-          <input onChange={handleChangeRatings} type="radio" value="" name="ratings" />
-          <span className="checkmark"></span>All
-          </label>
+        <h4 className={textStyle["base-text"]} style={{ padding: "10px" }}>{RATINGS_CONSTANTS.TITLE}</h4>
         <div>
-          <InputRadioBoxRatings
-            handleChangeRatings={handleChangeRatings}
-            value="1"
-            title="1 and up"
-            name="ratings"
-          />
-          <InputRadioBoxRatings
-            handleChangeRatings={handleChangeRatings}
-            value="2"
-            title="2 and up"
-            name="ratings"
-          />
-          <InputRadioBoxRatings
-            handleChangeRatings={handleChangeRatings}
-            value="3"
-            title="3 and up"
-            name="ratings"
-          />
-          <InputRadioBoxRatings
-            handleChangeRatings={handleChangeRatings}
-            value="4"
-            title="4 and up"
-            name="ratings"
-          />
+          {RATINGS_CONSTANTS.RADIO_BOXES.map((radioBox) => (
+            <InputRadioBoxRatings
+              key={radioBox.value}
+              handleChangeRatings={handleChangeRatings}
+              value={radioBox.value}
+              title={radioBox.label}
+              name="ratings"
+            />
+          ))}
         </div>
       </div>
     </>
