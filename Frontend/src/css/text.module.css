@@ -6,11 +6,19 @@
   }
   
   .sub-title {
-    font-size: var(--subtitle-font-size);
     font-weight: var(--font-bold);
     font-family: var(--font-family);
     color: var(--black);
+    padding-bottom: 20px;
+
+    
   }
+
+  .sub-title-sm{
+    font-size: small;
+  }
+
+  
   
   .base-text {
     font-size: var(--base-font-size);

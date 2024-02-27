@@ -1,0 +1,11 @@
+:root{
+    --location-container-height:400px;
+    --location-image-width:28px;
+    --location-container-padding:16px;
+}
+.locations-container{
+    padding: var(--location-container-padding);
+    max-height: var(--location-container-height);
+    font-family:var(--font-family);
+    overflow-y: scroll;
+}

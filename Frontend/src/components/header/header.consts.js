@@ -1,0 +1,1 @@
+export const STATICPLACEHOLDER = 'Search for services';

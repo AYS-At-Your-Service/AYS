@@ -1,21 +1,23 @@
-:root{
-    --modal-container-width: 488px;
-    --modal-container-height: 204px;
-    --modal-container-padding: 16px;
-    --modal-container-borderrad: 16px;
-    --modal-cross-outer-margin: 12px 16px;
-    --modal-cross-outer-width: 32px;
-    --modal-cross-outer-height: 32px;
-    --modal-cross-outer-bgcolor: rgba(255, 255, 255, 1.0);
-    --modal-cross-outer-borderrad: 12px 16px;
-    --modal-cross-width-height: 20px;
-}
-
-.modal-container{
+.modal-horizontal-container{
     width: var(--modal-container-width);   
     height: var(--modal-container-height);
     padding: var(--modal-container-padding);
     display: flex;
+    background-color: rosybrown;
+}
+
+.modal-vertical-container{
+    height: var(--modal-container-height);
+    padding: var(--modal-container-padding);
+    border-color: var(--modal-container-bordercolor);
+    border-width: var(--modal-container-borderwidth);
+    border-style: solid;
+    border-radius: var(--modal-container-borderrad);
+    background-color: var(--modal-container-bgcolor);
+}
+
+.modal-vertical-container ul{
+    list-style-type: none;
 }
 
 
@@ -43,8 +45,4 @@
     float: right;
     background-color: var(--modal-cross-outer-bgcolor);
     border-radius: var(--modal-container-borderrad);
-}
-
-body{
-    background-color: black;
 }

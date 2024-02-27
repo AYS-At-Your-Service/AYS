@@ -1,0 +1,88 @@
+.search-box-container{
+    border: var(--search-container-border-size) solid var(--search-container-border-color);
+    border-radius:  var(--search-container-border-radius);
+    font-family:var(--font-family);
+    width:var(--search-container-width);
+    padding:var(--search-container-padding);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    column-gap:var(--search-container-gap);
+}
+
+::placeholder {
+    animation: 2s steps(100, end);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  @keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+
+.search-box-container .img{
+    width: var(--search-image-size);
+}
+
+.text{
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.drop-box-container{
+    box-shadow: var(--drop-box-shadow);
+    border: var(--drop-box-container-border-size) solid var(--drop-box-container-border-color);
+    border-radius:  var(--drop-box-container-border-radius);
+    font-family:var(--font-family);
+    width:var(--drop-box-container-width);
+    padding:var(--drop-box-container-padding);
+    display: flex;
+    flex-direction: column;
+    gap:var(--drop-box-container-gap);
+}
+.drop-box-container .title{
+    font-size: var(--base-font-size);
+}
+.drop-box-container .elements{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--drop-box-elements-gap);
+}
+.drop-box-container .elements .element{
+    display:flex;
+    border: var(--drop-box-container-border-size) solid var(--drop-box-container-border-color);
+    border-radius:  var(--drop-box-container-border-radius);
+    padding:var(--drop-box-element-paddingy) var(--drop-box-element-paddingx) ;
+    gap:var(--drop-box-element-gap)
+}
+.drop-box-container .elements .element .image{
+    width: var(--drop-box-element-image-size);
+}
+.drop-box-container .elements .element .text {
+    font-size: var(--description-font-size);
+}
+
+.drop-box-container .category{
+    display: flex;
+    gap:var(--drop-box-category-gap);
+}
+.drop-box-container .category .image{
+    width: var(--drop-box-category-image-size);
+    border-radius: var(--drop-box-category-image-radius);
+}
+.drop-box-container .category .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.drop-box-container .category .text .title{
+    font-size: var(--button-font-size);
+}
+.drop-box-container .category .text .subtitle{
+    font-size: var(--description-font-size);
+}
+
