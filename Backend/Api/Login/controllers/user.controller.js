@@ -7,7 +7,7 @@ const client = require('twilio')(accountSid, authToken);
 const Userno = require('../modals/user.modal');
 const { phone_num_schema } = require('../zod/types');
 
-exports.signup = async (req,res)=>{
+exports.sendOTP = async (req,res)=>{
     const countryCode = req.body.countryCode;
     const phoneNumber = req.body.phoneNumber;
     try{
@@ -23,7 +23,7 @@ exports.signup = async (req,res)=>{
     }
 }
 
-exports.signin = async (req,res) =>{
+exports.createUser = async (req,res) =>{
     const phonenumber = `${req.body.countryCode}${req.body.phoneNumber}`;
     const parsed_num = phone_num_schema.safeParse({phonenumber})
     if(!parsed_num.success){

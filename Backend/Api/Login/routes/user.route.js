@@ -1,20 +1,20 @@
-const { validations, otpValidation } = require('../middleware/validations');
+const {otpValidation, phoneNumberValidation } = require('../middleware/validations');
 const controller = require('../controllers/user.controller');
 const { verifyOtp } = require('../middleware/verifyOtp');
 
 module.exports = function(app){
     app.post(
-        "/send",
-        validations,
-        controller.signup
+        "/sendOTPtoUser",
+        [phoneNumberValidation],
+        controller.sendOTP
     );
     app.post(
-        "/verify",
-        [validations,
+        "/verifyAndCreateUser",
+        [phoneNumberValidation,
         otpValidation,
         verifyOtp
     ],
-        controller.signin
+        controller.createUser
     )
 }
 

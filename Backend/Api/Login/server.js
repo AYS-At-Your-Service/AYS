@@ -6,11 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
-app.get("/",(req,res) =>{
-    res.json({msg:"Welcome to my crud operation app"});
-})
-
+//User Router
 require('./routes/user.route')(app);
 
 app.listen(port,()=>console.log(`app listening on port ${port}`));
