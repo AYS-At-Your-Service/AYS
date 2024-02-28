@@ -1,0 +1,9 @@
+.CheckOut_Header{
+    position: absolute;
+    padding: var(--checkout-Least-padding);
+    box-shadow: var(--checkout-Customized-box);
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: var(--checkout-Bottom-Margin);
+  }

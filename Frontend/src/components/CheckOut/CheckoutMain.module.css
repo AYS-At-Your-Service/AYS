@@ -1,0 +1,11 @@
+.CheckOut-Main{
+    width : 100%;
+    min-height: 100vh;
+    display: grid; 
+     align-items: center;  
+    background-color: var(--checkout-background-gray);
+    color: var(--black);
+    row-gap: var(--checkout-Row-gap);
+    padding: var(--checkout-Next-L-padding);
+    box-shadow: var(--drop-box-shadow);
+  }
